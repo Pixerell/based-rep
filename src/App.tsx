@@ -1,7 +1,7 @@
 import React from 'react';
-import '../../App.css';
-import logo from '../../logo.svg';
-import Header from "./Header";
+import './App.css';
+import Header from "./components/main-page/Header";
+
 
 function App(): JSX.Element {
   return (
