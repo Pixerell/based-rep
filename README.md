@@ -13,6 +13,10 @@ https://www.figma.com/file/94UF6xnp2ndqwDcVyskNnF/Untitled?node-id=6%3A77
 
 https://mui.com/material-ui/getting-started/overview/
 
+# ЗАДАЧКИ ТУТ
+
+https://based-project.atlassian.net/jira/your-work
+
 # FAQ(U)
 
 * Если ты пользуешься ебаной Visual Studio Code, ТО ТЫ УВОЛЕН НАХУЙ!!!!
