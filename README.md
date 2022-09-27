@@ -9,6 +9,10 @@ https://github.com/ShardOfDebil/based-rep
 
 https://www.figma.com/file/94UF6xnp2ndqwDcVyskNnF/Untitled?node-id=6%3A77
 
+# UI KIT
+
+https://mui.com/material-ui/getting-started/overview/
+
 # FAQ(U)
 
 * Если ты пользуешься ебаной Visual Studio Code, ТО ТЫ УВОЛЕН НАХУЙ!!!!
