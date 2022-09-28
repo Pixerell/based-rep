@@ -9,7 +9,7 @@ import React from 'react';
 
 function Header(): JSX.Element {
 	return (
-		<AppBar>
+		<AppBar position={'static'}>
 			<Toolbar className={'Header'}>
 				<Icon>
 					<AccessibleForwardOutlined/>
