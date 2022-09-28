@@ -1,6 +1,18 @@
+.AppBar {
+    backface-visibility: hidden;
+}
+
 .Header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+
     background-color: #200C36;
+}
+
+.Typography {
+    margin-left: 2.5vh;
+    font-weight: 650 !important;
+}
+
+.Button {
+    color: white !important;
+    text-transform: unset !important;
 }
