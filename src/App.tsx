@@ -16,7 +16,7 @@ export const themeOptions: ThemeOptions = {
 			disabled: '#5d5d5d',
 		},
 		primary: {
-			main: '#2c0c33',
+			main: '#FF00E5',
 		},
 		secondary: {
 			main: '#503657',
