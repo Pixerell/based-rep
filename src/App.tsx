@@ -36,7 +36,7 @@ export const BasedTheme: ThemeOptions = createTheme
 	}
 });
 
-function App(): JSX.Element {
+export default function App(): JSX.Element {
 	return (
 		<div className="App">
 			<Header/>
@@ -44,5 +44,3 @@ function App(): JSX.Element {
 		</div>
 	);
 }
-
-export default App;
