@@ -15,7 +15,6 @@ const Img = styled('img')({
 function MainContent(): JSX.Element {
 
 	return (
-		<ThemeProvider theme={'BasedTheme'}>
 			<Paper>
 				<Container maxWidth={"sm"}>
 					<Grid container spacing={12}>
@@ -23,7 +22,6 @@ function MainContent(): JSX.Element {
 					</Grid>
 				</Container>
 			</Paper>
-		</ThemeProvider>
 	)
 }
 
