@@ -1,10 +1,8 @@
-import {Box, Card, CardContent, CardMedia, Grid, styled, Theme, Typography} from "@mui/material";
-import {useTheme} from "@mui/material";
+import {Box, Card, CardContent, CardMedia, Grid, Typography} from "@mui/material";
 import React from 'react';
 import './../../styles/MainPage.css';
 
 function MainContent(): JSX.Element {
-	const theme: Theme = useTheme();
 	return (
 		<div>
 			<Box sx={{flexGrow: 1}}
