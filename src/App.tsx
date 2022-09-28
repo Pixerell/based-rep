@@ -1,7 +1,6 @@
 import {createTheme, ThemeOptions} from "@mui/material";
 import React from 'react';
 import './App.css';
-import MainContent from "./components/main-page/Content";
 import Header from "./components/main-page/Header";
 
 export const BasedTheme: ThemeOptions = createTheme
@@ -40,7 +39,6 @@ export default function App(): JSX.Element {
 	return (
 		<div className="App">
 			<Header/>
-			<MainContent/>
 		</div>
 	);
 }
