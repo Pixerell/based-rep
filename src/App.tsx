@@ -1,10 +1,11 @@
-import {ThemeOptions} from "@mui/material";
+import {createTheme, ThemeOptions} from "@mui/material";
 import React from 'react';
 import './App.css';
-import MainContent from "./components/main-page/Content";
+// import MainContent from "./components/main-page/Content";
 import Header from "./components/main-page/Header";
 
-export const themeOptions: ThemeOptions = {
+const basedTheme: ThemeOptions = createTheme
+({
 	palette: {
 		background: {
 			default: '#180c38',
@@ -33,13 +34,13 @@ export const themeOptions: ThemeOptions = {
 			main: '#034B6A',
 		}
 	}
-}
+});
 
 function App(): JSX.Element {
 	return (
 		<div className="App">
 			<Header/>
-			<MainContent/>
+			{/*<MainContent/>*/}
 		</div>
 	);
 }
