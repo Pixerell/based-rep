@@ -2,17 +2,3 @@
     backface-visibility: hidden;
 }
 
-.Header {
-
-    background-color: #200C36;
-}
-
-.Typography {
-    margin-left: 2.5vh;
-    font-weight: 650 !important;
-}
-
-.Button {
-    color: white !important;
-    text-transform: unset !important;
-}
