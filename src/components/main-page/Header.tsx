@@ -1,16 +1,16 @@
 import {AccessibleForwardOutlined} from "@mui/icons-material";
 import {
     AppBar,
-    Icon,
-    Toolbar, Typography, Box, Grid, Button, Avatar
+    Avatar,
+    Box, Button, Grid, Icon, Toolbar, Typography
 } from "@mui/material";
 import React from 'react';
+import {NavigateFunction, useNavigate} from "react-router-dom";
 import './Header.scss';
-import { useNavigate } from "react-router-dom";
 
 function Header(): JSX.Element {
 
-    const navigate = useNavigate();
+    const navigate: NavigateFunction = useNavigate();
 
 
     return (
