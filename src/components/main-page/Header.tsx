@@ -6,7 +6,7 @@ import {
 } from "@mui/material";
 import React from 'react';
 import {NavigateFunction, useNavigate} from "react-router-dom";
-import './Header.scss';
+import './Header.css';
 
 function Header(): JSX.Element {
 
@@ -42,15 +42,17 @@ function Header(): JSX.Element {
 										variant="text"><Typography
 									className={'Typography'}>База</Typography></Button>
 							</Grid>
-							<Grid mr={10}>
-								<Button onClick={() => navigate('/talant')} className={'Button'}
-										variant="text"><Typography
-									className={'Typography'}>Талант</Typography></Button>
-							</Grid>
+
 							<Grid mr={10}>
 								<Button onClick={() => navigate('/graphics')} className={'Button'}
 										variant="text"><Typography
 									className={'Typography'}>Графики</Typography></Button>
+							</Grid>
+
+							<Grid mr={10} >
+								<Button onClick={() => navigate('/talant')} className={'Button'}
+										variant="text"><Typography
+									className={'Typography'}>Талант</Typography></Button>
 							</Grid>
 						</Grid>
 					</Box>
