@@ -5,7 +5,12 @@ import Sidebar from "./Sidebar/Sidebar";
 
 function Base(): JSX.Element {
 	return (
-			<Sidebar/>
+			<div className={'MegaDivBase'}>
+				<Sidebar/>
+				<div className={'BaseContent'}/>
+				<div className={'BaseContent2'}/>
+
+			</div>
 
 	)
 }

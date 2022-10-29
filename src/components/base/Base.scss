@@ -1,4 +1,4 @@
-.MegaDiv {
+.MegaDivBase {
     display: flex;
     flex-direction: row;
     height: 100vh;
@@ -8,7 +8,16 @@
 
 .BaseContent {
     background-color: yellow;
-    width: 100%;
-    flex-direction: column;
+    width: 50%;
+    height: 200vh;
+    flex-direction: row;
+
+}
+
+.BaseContent2 {
+    background-color: aqua;
+    width: 50%;
+    height: 30px;
+    flex-direction: row;
 
 }
