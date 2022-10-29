@@ -1,15 +1,17 @@
-import {Icon} from "@mui/material";
 import {Headphones, Movie, PsychologyAlt} from "@mui/icons-material";
+import {Icon} from "@mui/material";
 import React from "react";
 
-export const SidebarData = [
+// tslint:disable-next-line:typedef
+export const SidebarData  = [
     {
         title: 'Moosic',
         path: '/base',
         icon:   <Icon>
                     <Headphones/>
                 </Icon>,
-        cName: 'nav-text'
+        cName: 'nav-text',
+        nav: 0
     },
     {
         title: 'Films',
@@ -17,7 +19,9 @@ export const SidebarData = [
         icon:   <Icon>
             <Movie/>
         </Icon>,
-        cName: 'nav-text'
+        cName: 'nav-text',
+        nav: 400
+
     },
     {
         title: 'People',
@@ -25,7 +29,9 @@ export const SidebarData = [
         icon:   <Icon>
             <PsychologyAlt/>
         </Icon>,
-        cName: 'nav-text'
+        cName: 'nav-text',
+        nav: 800
+
     },
 
 

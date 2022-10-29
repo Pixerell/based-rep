@@ -1,27 +1,52 @@
+import {AccessibleForwardOutlined} from "@mui/icons-material";
+import {Button, Icon} from "@mui/material";
 import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
 import './Sidebar.scss';
-import {AccessibleForwardOutlined} from "@mui/icons-material";
-import {Icon} from "@mui/material";
 import {SidebarData} from "./SidebarData";
 
 export default function Sidebar(): JSX.Element {
     const [sidebar, setSidebar] = useState(false)
-    const showSidebar = () => setSidebar(!sidebar)
+
+    window.onscroll = () => {scrollFunction()};
+
+    function scrollFunction() : void {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20)
+        {
+            // @ts-ignore
+            document.getElementById("side").style.top = "0";
+            console.log('moved?')
+        }
+        else {
+            // @ts-ignore
+            document.getElementById("side").style.top = "70px";
+        }
+    }
+
+
+    const showSidebar: () => void = () => setSidebar(!sidebar)
+
+    const goToSection: (num: number) => void = (num : number) => {
+        window.scrollTo({
+            top: num,
+            behavior: "smooth",
+        });
+    };
 
     return (
-        <div className={'MegaDiv'}>
+        <div id={"side"} className={'MegaDiv'}>
 
         <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
             <ul className={'nav-menu-items'}>
 
-                {SidebarData.map((item, index) => {
+                {/* tslint:disable-next-line:typedef */}
+                {SidebarData.map((item, index : number) => {
                     return (
                         <li key={index} className={item.cName}>
-                            <Link to={item.path}>
+                            <Button onClick={() => goToSection(item.nav)} className={'Button'}>
                                 {item.icon}
                                 <span>{item.title}</span>
-                            </Link>
+                            </Button>
 
                         </li>
                     )
