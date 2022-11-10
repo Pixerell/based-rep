@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import './App.css';
+import AuthorizationPage from "./components/authorization/AuthorizationPage";
 import BasePage from "./components/base/BasePage";
 import GraphicsPage from "./components/graphics/GraphicPage";
 import MainPage from "./components/main-page/MainPage";
@@ -16,7 +17,7 @@ export default function App(): JSX.Element {
 					<Route path="/base" element={<BasePage/>}/>
 					<Route path="/talant" element={<TalantPage/>}/>
 					<Route path="/graphics" element={<GraphicsPage/>}/>
-					<Route/>
+					<Route path="/authorization" element={<AuthorizationPage/>}/>
 				</Routes>
 			</Router>
 		</div>
