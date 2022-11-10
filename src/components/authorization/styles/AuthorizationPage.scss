@@ -1,15 +1,22 @@
 .page-container {
   display: flex;
   flex-direction: row;
-  border: #180c38 2px solid;
+  height: 100vh;
 }
 
 .login-panel {
   display: flex;
-  height: 100%;
-  width: 50%;
   flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 35%;
   border: #200C36 3px solid;
+}
+
+.input-field {
+  width: 350px;
+  min-width: 300px;
 }
 
 .parallax-panel {
