@@ -8,10 +8,11 @@ import React from 'react';
 import {NavigateFunction, useNavigate} from "react-router-dom";
 import './Header.css';
 
-function Header(): JSX.Element {
+
+export default function Header(): JSX.Element {
 
 	const navigate: NavigateFunction = useNavigate();
-
+	const isAuthorized: boolean = false;
 	return (
 		<Box sx={{flexGrow: 1}}>
 
@@ -72,6 +73,3 @@ function Header(): JSX.Element {
 		</Box>
 	)
 }
-
-// JSX.Element = export default
-export default Header;
