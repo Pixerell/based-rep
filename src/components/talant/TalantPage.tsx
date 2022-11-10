@@ -1,3 +1,4 @@
+import React from 'react';
 import Header from "../main-page/Header";
 import Talant from "./Talant";
 
