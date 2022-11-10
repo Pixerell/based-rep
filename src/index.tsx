@@ -13,7 +13,7 @@ const BasedTheme: ThemeOptions = createTheme
 			paper: '#200c36',
 		},
 		text: {
-			primary: '#ffffff',
+			primary: '#000000',
 			secondary: '#a7a7a7',
 			disabled: '#5d5d5d',
 		},

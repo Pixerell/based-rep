@@ -1,6 +1,6 @@
 import {Box, Card, CardContent, CardMedia, Grid, Typography} from "@mui/material";
 import React from 'react';
-import './styles/MainPage.scss';
+import './styles/Content.scss';
 
 function MainContent(): JSX.Element {
 	return (

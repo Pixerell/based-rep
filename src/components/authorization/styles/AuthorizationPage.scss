@@ -1,0 +1,20 @@
+.page-container {
+  display: flex;
+  flex-direction: row;
+  border: #180c38 2px solid;
+}
+
+.login-panel {
+  display: flex;
+  height: 100%;
+  width: 50%;
+  flex-direction: column;
+  border: #200C36 3px solid;
+}
+
+.parallax-panel {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: red 5px solid;
+}
