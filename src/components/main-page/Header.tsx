@@ -12,7 +12,6 @@ function Header(): JSX.Element {
 
 	const navigate: NavigateFunction = useNavigate();
 
-
 	return (
 		<Box sx={{flexGrow: 1}}>
 			<AppBar position={"static"} className={'AppBar'}>
