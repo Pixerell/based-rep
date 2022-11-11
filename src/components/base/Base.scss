@@ -8,8 +8,13 @@
 
 .BaseContent {
     background-color: yellow;
-    width: 50%;
+    width: 100%;
     height: 200vh;
+    flex-direction: row;
+
+}
+
+.CardContainer {
     flex-direction: row;
 
 }
