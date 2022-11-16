@@ -34,26 +34,24 @@ export default function Sidebar(): JSX.Element {
     };
 
     return (
-        <div id={"side"} className={'MegaDiv'}>
-
-        <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
-            <ul className={'nav-menu-items'}>
-
-                {/* tslint:disable-next-line:typedef */}
-                {SidebarData.map((item, index : number) => {
-                    return (
-                        <li key={index} className={item.cName}>
-                            <Button onClick={() => goToSection(item.nav)} className={'Button'}>
-                                {item.icon}
-                                <span>{item.title}</span>
-                            </Button>
-
-                        </li>
-                    )
-                })}
-            </ul>
-
-        </nav>
+        <div id={"side"}>
+        <div className={sidebar ? 'MegaDiv active' : 'MegaDiv'}>
+            <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
+                <ul className={'nav-menu-items'}>
+                    {/* tslint:disable-next-line:typedef */}
+                    {SidebarData.map((item, index : number) => {
+                        return (
+                            <li key={index} className={item.cName}>
+                                <Button onClick={() => goToSection(item.nav)} className={'Button'}>
+                                    {item.icon}
+                                    <span>{item.title}</span>
+                                </Button>
+                            </li>
+                        )
+                    })}
+                </ul>
+            </nav>
+        </div>
             <div className={sidebar ? 'navbar active' : 'navbar'}>
                 <Link to='#' className={'menu-bars'}>
                     <Icon>
