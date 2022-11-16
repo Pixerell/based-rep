@@ -52,10 +52,10 @@ export default function Sidebar(): JSX.Element {
                 </ul>
             </nav>
         </div>
-            <div className={sidebar ? 'navbar active' : 'navbar'}>
+            <div className={sidebar ? 'navbar active' : 'navbar'} onClick={showSidebar}>
                 <Link to='#' className={'menu-bars'}>
                     <Icon>
-                        <AccessibleForwardOutlined onClick={showSidebar}/>
+                        <AccessibleForwardOutlined/>
                     </Icon>
                 </Link>
             </div>
