@@ -9,7 +9,7 @@ export default function Authorization(): JSX.Element {
 		<div>
 			<div className={'page-container'}>
 				<div className={'login-panel'}>
-					<div className={'background'}>
+					<div className={'login-container'}>
 						<FormControl>
 							<TextField
 								className={'input-field'}
