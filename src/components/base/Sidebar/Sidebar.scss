@@ -1,26 +1,29 @@
-
-
 .MegaDiv {
-
+  display: none;
   position: fixed;
-  z-index: 100;
   transition: top 0.4s;
+  z-index: 100;
+}
+
+.MegaDiv.active {
+  display: block !important;
 }
 
 .SideBase {
   background-color: aliceblue;
   flex-direction: column;
-
 }
 
 .navbar {
-  background-color: #180c38;
+  background-color: #b55eff;
   height: 80px;
   width: 80px;
-  position: absolute;
+
+  z-index: 100 !important;
+  position: fixed;
+
   top: 40%;
   border-radius: 50%;
-  z-index: 100;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -32,8 +35,6 @@
   background-color: white;
   transform: translateX(200%) !important;
   transition: 850ms;
-
-
 }
 
 
@@ -58,6 +59,7 @@
 .nav-menu.active {
   transform: translateX(0%) !important;
   transition: 850ms;
+  z-index: 100 !important;
 }
 
 .nav-text {
