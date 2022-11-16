@@ -2,11 +2,12 @@ import React from "react";
 import './Talant.scss';
 
 export default function Talant(): JSX.Element {
-	let audio = new Audio("/seregaMind.mp3")
+	const audio: HTMLAudioElement = new Audio("/seregaMind.mp3")
 
 	const start1 = () => {
 		audio.play()
 	}
+
 	audio.addEventListener('ended', function (){
 		this.currentTime=0;
 		this.play();
