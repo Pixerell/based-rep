@@ -1,5 +1,6 @@
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import {
+    Avatar,
     Card,
     CardActions,
     CardContent,
@@ -41,8 +42,8 @@ export default function MusicCard({card}): JSX.Element {
     };
 
     return (
-            <div>
-               <Card elevation={3} className={"Card"}>
+            <div className={"Card"}>
+               <Card elevation={3} className={"CardWrap"}>
                    <CardMedia className={"AlbumCover"}
                        component="img"
                        image={card.avatar}
@@ -52,12 +53,12 @@ export default function MusicCard({card}): JSX.Element {
                    <CardHeader className={"CardHeader"}
                        title={card.album}
                        titleTypographyProps={{ color: 'white' }}
-                       subheader={card.genre}
-                       />
+                       subheader={card.artist +  " - " + card.genre}
+                   />
 
                    <CardContent>
                        <Typography variant="body2" color="textSecondary">
-                           {card.details}
+                           {card.smallDesc}
                        </Typography>
                    </CardContent>
 
@@ -75,6 +76,10 @@ export default function MusicCard({card}): JSX.Element {
                        <CardContent>
                            <Typography paragraph className={'TypographyDetails'}>
                                {card.details}
+                               <div className={"afterDetails"}>
+                                   <Avatar alt={card.artist} src={card.artist_avatar} />
+                                   <a href={card.link} className={"albumLink"}>Слушать альбом</a>
+                               </div>
                            </Typography>
                        </CardContent>
                    </Collapse>

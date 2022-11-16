@@ -1,68 +1,82 @@
 {
       "musicCards": [
-        {
-          "album" : "Geodaddi",
-          "artist" : "Boards Of Canada",
-          "details" : "Lorem Ipsum",
-          "genre" : "IDM",
-          "date" : "2002",
-          "link" : "https://open.spotify.com/album/7Lou3RDk6NswmbzBMhro24?si=HbqKM2nPTsyuXd1_q1LfeA",
-          "avatar" : "https://media.pitchfork.com/photos/5929a330b1335d7bf1698685/1:1/w_600/068497d8.jpg",
-          "id" : 1
-        },
+
 
         {
           "album" : "OK Computer",
           "artist" : "Radiohead",
+          "smallDesc" : "Битлз нашего времени",
           "details" : "Lorem Ipsum",
           "genre" : "Alt Rock",
           "date" : "1997",
           "link" : "https://open.spotify.com/album/6dVIqQ8qmQ5GBnJ9shOYGE?si=v5ExHgtUQc64xPOxTdppRA",
-          "avatar" : "https://cdn.mos.cms.futurecdn.net/UbGZ5qSLLucLzEUkmQXQSn-970-80.jpg.webp",
+          "avatar" : "okcomputer.jpg",
+          "artist_avatar" : "radioheadAvatar.jpg",
+          "id" : 1
+        },
+
+        {
+          "album" : "Geodaddi",
+          "artist" : "Boards Of Canada",
+          "smallDesc" : "Внимание! Никогда не засыпайте под этот альбом.",
+          "details" : "Lorem Ipsum",
+          "genre" : "IDM",
+          "date" : "2002",
+          "link" : "https://open.spotify.com/album/7Lou3RDk6NswmbzBMhro24?si=HbqKM2nPTsyuXd1_q1LfeA",
+          "avatar" : "geogaddi.jpg",
+          "artist_avatar" : "bocAvatar.jpg",
           "id" : 2
         },
 
         {
           "album" : "98.12.28 (live)",
           "artist" : "Fishmans",
+          "smallDesc" : "Пик музыки...",
           "details" : "Lorem Ipsum",
           "genre" : "Dream Pop",
           "date" : "1999",
           "link" : "https://open.spotify.com/album/5K4YFkTizFoMOyN5Khfp7G?si=X0EG9ymhTc-spmS0X_QZrQ",
-          "avatar" : "https://e.snmc.io/i/1200/s/9cd58bb81b91ed82d9f538efa84f2c68/7125738",
+          "avatar" : "fishmans.jpg",
+          "artist_avatar" : "fishmansAvatar.jpg",
           "id" : 3
         },
 
         {
           "album" : "Loveless",
           "artist" : "My Bloody Valentine",
+          "smallDesc" : "Утопать в бесконечных слоях атмосферного шума.",
           "details" : "Lorem Ipsum",
           "genre" : "Shoegaze",
           "date" : "1991",
           "link" : "https://open.spotify.com/album/3GH4IiI6jQAIvnHVdb5FB6?si=DpRJeBeDR--IPk8c2FegPQ",
-          "avatar" : "https://insheepsclothinghifi.com/wordpress/wp-content/uploads/2020/10/mbvfront.jpg",
+          "avatar" : "mbv.jpg",
+          "artist_avatar" : "mbvAvatar.jpeg",
           "id" : 4
         },
 
         {
           "album" : "Madvillainy",
           "artist" : "MF DOOM & Madlib",
+          "smallDesc" : "Рэп про еду со скоростью 500 рифм в секунду.",
           "details" : "Lorem Ipsum",
           "genre" : "Abstract Rap",
-          "date" : "20044",
+          "date" : "2004",
           "link" : "https://open.spotify.com/album/19bQiwEKhXUBJWY6oV3KZk?si=ZWTDqCMLSd6wEqs2ug5YrQ",
-          "avatar" : "https://f4.bcbits.com/img/a1024330960_10.jpg",
+          "avatar" : "madvillainy.jpg",
+          "artist_avatar" : "madvillainyAvatar.jpg",
           "id" : 5
         },
 
         {
           "album" : "And Their Refinement of the Decline",
           "artist" : "Stars Of The Lid",
+          "smallDesc" : "Когда нужно подумать.",
           "details" : "Lorem Ipsum",
           "genre" : "Ambient",
           "date" : "2007",
           "link" : "https://open.spotify.com/album/6cHPEbPryLpH5VX5Eb1Vvo?si=08l2uHfWRv6XkrZQWxGk0g",
           "avatar" : "SoTL.jpeg",
+          "artist_avatar" : "SoTLAvatar.jpg",
           "id" : 6
         }
       ]
