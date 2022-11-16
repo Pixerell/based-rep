@@ -20,17 +20,29 @@ function Base(): JSX.Element {
 	return (
 			<div className={'MegaDivBase'}>
 				<Sidebar/>
-				<Box padding={2}>
+				<div className={'bg'}>
+					<span>
+						<h1 className={'musicHead'}>
+							Music
+							<div className={'musicInformation'}>
+								Никогда не задумывались какую музыку слушают настоящие гигачады база-шлёппы?
+								Попробуй один из альбомов снизу, чтобы проникнуться этим вкусом свободы.
+							</div>
+						</h1>
+						<Box padding={2}>
 
-						<Grid container spacing={3} alignItems="stretch" >
-							{/* tslint:disable-next-line:typedef */}
-					{cardsN.map(cardN => (
-						<Grid item key={cardN.id} xs={6} md={4} lg={2}>
-							<MusicCard card={cardN}/>
-						</Grid>
-						))}
-							</Grid>
-				</Box>
+								<Grid container spacing={3} alignItems="stretch" >
+									{/* tslint:disable-next-line:typedef */}
+							{cardsN.map(cardN => (
+								<Grid item key={cardN.id} xs={6} md={4} lg={2}>
+									<MusicCard card={cardN}/>
+								</Grid>
+								))}
+									</Grid>
+						</Box>
+					</span>
+				</div>
+
 
 			</div>
 
