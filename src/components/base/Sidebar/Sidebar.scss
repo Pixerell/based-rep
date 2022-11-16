@@ -1,12 +1,17 @@
 .MegaDiv {
   display: none;
   position: fixed;
-  transition: top 0.4s;
+  transition: 850ms;
   z-index: 100;
 }
 
 .MegaDiv.active {
   display: block !important;
+  transition: 850ms;
+}
+
+.Transition {
+  transition: 850ms;
 }
 
 .SideBase {
@@ -18,10 +23,9 @@
   background-color: #b55eff;
   height: 80px;
   width: 80px;
-
+  cursor: pointer;
   z-index: 100 !important;
   position: fixed;
-
   top: 40%;
   border-radius: 50%;
   display: flex;
@@ -43,6 +47,7 @@
   margin-bottom: 10px;
   font-size: 2rem;
   background: none;
+  transition: top 0.4s;
 }
 
 .nav-menu {
