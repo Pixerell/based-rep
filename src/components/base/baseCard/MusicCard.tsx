@@ -78,7 +78,7 @@ export default function MusicCard({card}): JSX.Element {
                                {card.details}
                                <div className={"afterDetails"}>
                                    <Avatar alt={card.artist} src={card.artist_avatar} />
-                                   <a href={card.link} className={"albumLink"}>Слушать альбом</a>
+                                   <a target={'_blank'} href={card.link} className={"albumLink"}>Слушать альбом</a>
                                </div>
                            </Typography>
                        </CardContent>
