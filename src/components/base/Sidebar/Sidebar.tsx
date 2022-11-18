@@ -34,8 +34,8 @@ export default function Sidebar(): JSX.Element {
     };
 
     return (
-        <div id={"side"}>
-        <div className={sidebar ? 'MegaDiv active' : 'MegaDiv'}>
+        <div>
+        <div id={"side"} className={sidebar ? 'MegaDiv active' : 'MegaDiv'}>
             <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
                 <ul className={'nav-menu-items'}>
                     {/* tslint:disable-next-line:typedef */}
