@@ -48,20 +48,17 @@ export default function MusicCard({card}): JSX.Element {
                        component="img"
                        image={card.avatar}
                        alt={card.album}
-
                    />
                    <CardHeader className={"CardHeader"}
                        title={card.album}
                        titleTypographyProps={{ color: 'white' }}
                        subheader={card.artist +  " - " + card.genre}
                    />
-
                    <CardContent>
                        <Typography variant="body2" color="textSecondary">
                            {card.smallDesc}
                        </Typography>
                    </CardContent>
-
                    <CardActions disableSpacing>
                        <ExpandMore
                            expand={expanded}
@@ -76,11 +73,11 @@ export default function MusicCard({card}): JSX.Element {
                        <CardContent>
                            <Typography paragraph className={'TypographyDetails'}>
                                {card.details}
-                               <div className={"afterDetails"}>
-                                   <Avatar alt={card.artist} src={card.artist_avatar} />
-                                   <a target={'_blank'} href={card.link} className={"albumLink"}>Слушать альбом</a>
-                               </div>
                            </Typography>
+                           <div className={"afterDetails"}>
+                               <Avatar alt={card.artist} src={card.artist_avatar} />
+                               <a rel={'noreferrer'} target={'_blank'} href={card.link} className={"albumLink"}>Слушать альбом</a>
+                           </div>
                        </CardContent>
                    </Collapse>
                </Card>
