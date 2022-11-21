@@ -6,14 +6,12 @@
 .CardWrap {
   min-height: 490px !important;
 }
-.Card {
+.MusicCard {
   transition: .7s;
   transform: rotate(0deg);
-
-
 }
 
-.Card:hover {
+.MusicCard:hover {
   transform: translateY(-20px);
   rotate: 1deg;
   transition: 0.7s;

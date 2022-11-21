@@ -18,9 +18,9 @@ function Base(): JSX.Element {
 	}, [])
 
 	return (
-			<div className={'MegaDivBase'}>
-				<Sidebar/>
-				<div className={'bg'}>
+		<div className={'MegaDivBase'}>
+			<Sidebar/>
+			<div className={'bg'}>
 					<span>
 						<h1 className={'musicHead'}>
 							Music
@@ -30,21 +30,18 @@ function Base(): JSX.Element {
 							</div>
 						</h1>
 						<Box padding={2}>
-
-								<Grid container spacing={3} alignItems="stretch" >
+								<Grid container spacing={3} alignItems="stretch">
 									{/* tslint:disable-next-line:typedef */}
-							{cardsN.map(cardN => (
-								<Grid item key={cardN.id} xs={6} md={4} lg={2}>
-									<MusicCard card={cardN}/>
-								</Grid>
-								))}
+									{cardsN.map(cardN => (
+										<Grid item key={cardN.id} xs={6} md={4} lg={2}>
+											<MusicCard card={cardN}/>
+										</Grid>
+									))}
 									</Grid>
 						</Box>
 					</span>
-				</div>
-
-
 			</div>
+		</div>
 
 	)
 }

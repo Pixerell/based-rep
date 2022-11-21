@@ -71,27 +71,26 @@
   display: flex;
   justify-content: start;
   align-items: center;
-  padding: 8px 0px 8px 0px;
+  padding: 8px 0 8px 0;
   margin-right: 60px;
   list-style: none;
   height: 60px;
-}
 
-.nav-text button {
-  text-decoration: none;
-  color: white;
-  font-size: 18px;
-  width: 300px;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  border-radius: 4px;
-}
+  Button {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    border-radius: 4px;
 
-.nav-text button:hover {
-  background-color: aqua;
-
+    &:hover {
+      background-color: aqua;
+    }
+  }
 }
 
 .nav-menu-items {

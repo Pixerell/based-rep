@@ -42,7 +42,7 @@ export default function MusicCard({card}): JSX.Element {
     };
 
     return (
-            <div className={"Card"}>
+            <div className={"MusicCard"}>
                <Card elevation={3} className={"CardWrap"}>
                    <CardMedia className={"AlbumCover"}
                        component="img"
