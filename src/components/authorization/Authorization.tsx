@@ -4,42 +4,37 @@ import {useFormControl} from '@mui/material/FormControl';
 import React from 'react';
 import './styles/AuthorizationPage.scss'
 
-const cards: Element | null = document.querySelector(".cards");
-const images: NodeListOf<Element> = document.querySelectorAll(".card__img");
-const backgrounds: NodeListOf<Element> = document.querySelectorAll(".card__bg");
+const card: NodeListOf<Element> = document.querySelector(".cards");
+const field: NodeListOf<Element> = document.querySelectorAll(".input-field, .button-auth");
 const range: number = 40;
 
-// // const calcValue = (a, b) => (((a * 100) / b) * (range / 100) -(range / 2)).toFixed(1);
-// const calcValue = (a: number, b: number) => (a/b*range-range/2).toFixed(1) // thanks @alice-mx
-//
-// let timeout: number;
-// document.addEventListener('mousemove', ({x, y}) => {
-// 	if (timeout) {
-// 		window.cancelAnimationFrame(timeout);
-// 	}
-//
-// 	timeout = window.requestAnimationFrame(() => {
-// 		const yValue: string = calcValue(y, window.innerHeight);
-// 		const xValue: string = calcValue(x, window.innerWidth);
-//
-// 		cards.style.transform = `rotateX(${yValue}deg) rotateY(${xValue}deg)`;
-//
-// 		[].forEach.call(images, (image) => {
-// 			image.style.transform = `translateX(${-xValue}px) translateY(${yValue}px)`;
-// 		});
-//
-// 		[].forEach.call(backgrounds, (background) => {
-// 			background.style.backgroundPosition = `${xValue*.45}px ${-yValue*.45}px`;
-// 		})
-// 	})
-// }, false);
+const calcValue: string = (a: number, b: number): string => (a/b*range-range/2).toFixed(1)
+
+let timeout: number;
+document.addEventListener('mousemove', ({x, y}: number) => {
+	if (timeout) {
+		window.cancelAnimationFrame(timeout);
+	}
+
+	timeout = window.requestAnimationFrame(() => {
+		const yValue: string = calcValue(y, window.innerHeight);
+		const xValue: string = calcValue(x, window.innerWidth);
+
+		card.style.transform = `rotateX(${yValue}deg) rotateY(${xValue}deg)`;
+
+		[].forEach.call(field, (field) => {
+			field.style.transform = `translateX(${-xValue}px) translateY(${yValue}px)`;
+		});
+	})
+}, false);
 
 export default function Authorization(): JSX.Element {
 	return (
 		<div>
 			<div className={'page-container'}>
 				<div className={'login-panel'}>
-					<div className={'login-container'}>
+					<div className="cards">
+						<h1>Добро пожаловать</h1>
 						<FormControl>
 							<TextField
 								className={'input-field login-field'}
@@ -55,11 +50,9 @@ export default function Authorization(): JSX.Element {
 								autoComplete="current-password"
 								variant="outlined"
 							/>
-							<div>
-								<Button variant="contained">Регистрация</Button>
-								<Button variant="contained">Войти</Button>
-							</div>
 						</FormControl>
+						<Button className={'button-auth'} variant="contained">Регистрация</Button>
+						<Button className={'button-auth'} variant="contained">Войти</Button>
 					</div>
 				</div>
 			</div>
