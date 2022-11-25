@@ -37,7 +37,7 @@ function Base(): JSX.Element {
 											<MusicCard card={cardN}/>
 										</Grid>
 									))}
-									</Grid>
+								</Grid>
 						</Box>
 					</span>
 			</div>
