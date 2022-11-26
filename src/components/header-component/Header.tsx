@@ -6,7 +6,7 @@ import {
 } from "@mui/material";
 import React from 'react';
 import {NavigateFunction, useNavigate} from 'react-router-dom';
-import './styles/Header.scss';
+import './Header.scss';
 
 
 export default function Header(): JSX.Element {

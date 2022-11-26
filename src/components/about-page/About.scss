@@ -1,0 +1,59 @@
+
+.Bod {
+  margin: 0;
+  width: 100%;
+  transform: translateX(0px);
+}
+
+.Heading {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  transform-style: preserve-3d;
+  z-index: -1;
+}
+
+.Title {
+  font-size: 7rem;
+  text-shadow: 0 0 10px #080613;
+  width: 100%;
+  text-align: center;
+  color: white !important;
+}
+
+.Wrapper {
+  height: 100vh;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 10px;
+}
+
+.Background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+  transform: translateZ(-10px) scale(2.2);
+}
+
+.Foreground {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  filter: blur(3px);
+  opacity: 80%;
+  z-index: -1;
+  transform: translateZ(-5px) scale(1.5);
+}
+
+section {
+  font-size: 2rem;
+  padding: 2rem;
+  background-color: #080613;
+  color: white;
+}

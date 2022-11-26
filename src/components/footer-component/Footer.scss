@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 15vh;
+  height: 20vh;
   background-color: #080613;
 }
 
@@ -11,6 +11,7 @@
   align-items: center;
   width: 50%;
   margin-left: 32px;
+  margin-top: 64px;
 
   .ClickerButton {
     display: flex;
@@ -53,7 +54,6 @@
       transform: scale(3);
       transition: .1s;
     }
-
   }
 
   .Counter {
@@ -85,28 +85,44 @@
   margin-right: 128px;
   color: white !important;
 
-
   .ContactItems {
     display: flex;
     flex-direction: row;
     height: 20px;
-    margin-top: 10px;
+    margin-top: 18px;
     font-weight: lighter;
     opacity: 80%;
 
     .ItemIcon {
       margin-top: 15px;
-      margin-right: 15px;
+      margin-right: 20px;
       opacity: 100%;
     }
   }
 }
 .Contacts::before {
   content: '';
-  position: absolute;
-  bottom: -5px;
+  transform: translate(0px, 30px);
   background-color: #FF00E5;
   height: 2px;
   box-sizing: border-box;
   width: 50px;
+}
+
+.Copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  margin-top: 6%;
+  opacity: 50%;
+  color: white !important;
+  transition: .4s;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 80%;
+    transform: translateY(-5px);
+    transition: 0.3s;
+  }
 }
