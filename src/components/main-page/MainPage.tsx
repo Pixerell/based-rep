@@ -1,7 +1,7 @@
 import React from 'react';
+import Footer from "../footer-component/Footer";
+import Header from "../header-component/Header";
 import MainContent from "./Content";
-import Footer from "./Footer";
-import Header from "./Header";
 
 export default function MainPage(): JSX.Element {
 	

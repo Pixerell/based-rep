@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from "../main-page/Header";
+import Header from "../header-component/Header";
 import Base from "./Base";
 
 export default function BasePage(): JSX.Element {

@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/Content.scss';
+import './Content.scss';
 
 function MainContent(): JSX.Element {
 	return (
@@ -9,7 +9,6 @@ function MainContent(): JSX.Element {
 				<h1 className={"Title"}>RASSLABUXA</h1>
 			</div>
 		</div>
-
 )
 }
 
