@@ -15,8 +15,8 @@ export default function App(): JSX.Element {
 				<Routes>
 					<Route path="/" element={<MainPage/>}/>
 					<Route path="/base" element={<BasePage/>}/>
-					<Route path="/talant" element={<TalantPage/>}/>
 					<Route path="/graphics" element={<GraphicsPage/>}/>
+					<Route path="/talant" element={<TalantPage/>}/>
 					<Route path="/authorization" element={<AuthorizationPage/>}/>
 				</Routes>
 			</Router>

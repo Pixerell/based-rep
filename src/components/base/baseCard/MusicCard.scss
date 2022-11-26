@@ -5,6 +5,7 @@
 
 .CardWrap {
   min-height: 490px !important;
+  z-index: 2;
 }
 .MusicCard {
   transition: .7s;
@@ -19,7 +20,7 @@
 }
 
 .CardHeader {
-  padding-bottom: 0px !important;
+  padding-bottom: 0 !important;
 }
 
 .TypographyDetails {
@@ -35,7 +36,7 @@
 .albumLink {
   text-decoration: none;
   color: #b55eff;
-  margin: 7px 0px 0px 10px !important;
+  margin: 7px 0 0 10px !important;
   transition: 0.3s;
 }
 

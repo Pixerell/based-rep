@@ -28,8 +28,12 @@ https://based-project.atlassian.net/jira/your-work
 # КОМАНДЫ
 
 * Для использования json данных нужно ввести команду:
+  - npm install -g json-server
   - json-server --watch based-rep/data/sitedb.json --port 8000
   - Если не получается ввести первую ('Not Digitally Signed Error') то пишешь - Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+# npm install --save chart.js react-chartjs-2 
+  npm install --save chart.js 
+  npm install @faker-js/faker --save-dev - dlya data
 
 
 * В будущем дополню.

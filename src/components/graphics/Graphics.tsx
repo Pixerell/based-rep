@@ -1,11 +1,8 @@
-import React from "react";
+import React from 'react';
 
-function Graphics(): JSX.Element {
-	return (
-		<div>
-			Graphics
-		</div>
-	)
+
+export default function Graphics() : JSX.Element {
+	return <div>
+		graphics
+	</div>
 }
-
-export default Graphics;

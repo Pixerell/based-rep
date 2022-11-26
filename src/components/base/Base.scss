@@ -6,9 +6,11 @@
 
 .bg {
     background-color: #080613;
+    height: 1630px !important;
 }
 
 .musicHead{
+    z-index: 1;
     text-align: center;
     color: white;
     width: 100%;
@@ -16,8 +18,9 @@
 
 }
 .musicInformation {
+    z-index: 1;
     color: #747083;
-    margin: 30px 0px 30px 0px;
+    margin: 30px 0 30px 0;
     font-size: 14px;
 }
 
