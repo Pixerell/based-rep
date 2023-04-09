@@ -1,15 +1,18 @@
 import React from "react";
 import Footer from "../footer-component/Footer";
+import {AudioPlayer, setupAudio} from "../helpers/audioPlayer";
 import './About.scss';
 
 export default function About(): JSX.Element {
+    
+    const {startAudio }: AudioPlayer = setupAudio("/EYDIAB.mp3");
 
     return (
         <div className={"Bod"}>
             <div className={"Wrapper"}>
                 <div className={"Heading"}>
 
-                <img className={"Background"} src={"bg.jpg"} alt="background chillwave about image"/>
+                <img className={"Background"} src={"bg.jpg"} onLoad={startAudio} alt="background chillwave about image"/>
                 <img className={"Foreground"} src={"fgf.png"} alt="foreground clouds about image"/>
                 <h1 className={"Title"}>RASSLABUXA</h1>
                 </div>

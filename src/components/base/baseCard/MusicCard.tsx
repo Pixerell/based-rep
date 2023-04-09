@@ -11,7 +11,10 @@ import {
     Typography
 } from "@mui/material";
 import React from "react";
-import './MusicCard.scss'
+import artistDefaultPhoto from '../../../workingImages/pixerell.png';
+import albumDefaultPhoto from '../../../workingImages/soundcloud_Icon.png';
+import './MusicCard.scss';
+
 
 interface IExpandMoreProps extends IconButtonProps {
     expand: boolean;
@@ -41,12 +44,13 @@ export default function MusicCard({card}): JSX.Element {
         setExpanded(!expanded);
     };
 
+
     return (
             <div className={"MusicCard"}>
                <Card elevation={3} className={"CardWrap"}>
                    <CardMedia className={"AlbumCover"}
                        component="img"
-                       image={card.avatar}
+                       image={card.avatar !== null ? card.avatar : albumDefaultPhoto}
                        alt={card.album}
                    />
                    <CardHeader className={"CardHeader"}
@@ -75,7 +79,7 @@ export default function MusicCard({card}): JSX.Element {
                                {card.details}
                            </Typography>
                            <div className={"afterDetails"}>
-                               <Avatar alt={card.artist} src={card.artist_avatar} />
+                               <Avatar alt={card.artist} src={card.artist_avatar !== null ? card.artist_avatar : artistDefaultPhoto} />
                                <a rel={'noreferrer'} target={'_blank'} href={card.link} className={"albumLink"}>Слушать альбом</a>
                            </div>
                        </CardContent>

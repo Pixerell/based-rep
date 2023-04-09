@@ -7,6 +7,7 @@
 .bg {
     background-color: #080613;
     height: 1630px !important;
+    width: 100%;
 }
 
 .musicHead{
@@ -16,6 +17,14 @@
     width: 100%;
     font-family: 'Space Grotesk', sans-serif;
 
+
+
+}
+
+@media (max-width: 110px) {
+    .musicHead {
+        display: none;
+    }
 }
 .musicInformation {
     z-index: 1;

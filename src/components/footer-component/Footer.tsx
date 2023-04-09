@@ -1,6 +1,6 @@
 import CloseIcon from '@mui/icons-material/Close';
 import EmailIcon from '@mui/icons-material/Email';
-import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+import SurroundSoundIcon from '@mui/icons-material/SurroundSound';
 import TelegramIcon from '@mui/icons-material/Telegram';
 import {Icon} from "@mui/material";
 import React, {useState} from 'react';
@@ -8,18 +8,19 @@ import {NavigateFunction, useNavigate} from "react-router-dom";
 import './Footer.scss';
 
 
-let showCount : boolean = false;
-
-
 function Footer(): JSX.Element {
+
 
     const [count, setCount] = useState(0);
     const navigate: NavigateFunction = useNavigate();
+    const [showCount, setShowCount] = useState(false);
 
 
+    // tslint:disable-next-line:typedef
     const incrementCount = (): void => {
         setCount(count + 1);
-        showCount = true;
+        // tslint:disable-next-line:typedef
+        setShowCount(showCount => !showCount);
     };
 
     return (
@@ -42,21 +43,21 @@ function Footer(): JSX.Element {
                     <Icon className={'ItemIcon'}>
                         <EmailIcon/>
                     </Icon>
-                    <p >regiga9427@probdd.com</p>
+                    <p >alexmegaflexer@gmail.com</p>
                 </div>
 
                 <div className={'ContactItems'}>
                     <Icon className={'ItemIcon'}>
                         <TelegramIcon/>
                     </Icon>
-                    <p>@aboba</p>
+                    <p>@YiMisc</p>
                 </div>
 
                 <div className={'ContactItems'}>
                     <Icon className={'ItemIcon'}>
-                        <LocalPhoneIcon/>
+                        <SurroundSoundIcon/>
                     </Icon>
-                    <p>+1 1 1 1 1</p>
+                    <a rel={'noreferrer'} target={'_blank'} href={'https://soundcloud.com/user-389858854'}>Pixerell</a>
                 </div>
             </div>
 
