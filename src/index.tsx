@@ -14,7 +14,7 @@ const BasedTheme: ThemeOptions = createTheme
 		},
 		text: {
 			primary: '#000000',
-			secondary: '#a7a7a7',
+			secondary: '#000000',
 			disabled: '#5d5d5d',
 		},
 		primary: {
