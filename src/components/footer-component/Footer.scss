@@ -6,6 +6,21 @@
   background-color: #080613;
 }
 
+@media (max-width: 450px) {
+  .Footer {
+    display: none;
+  }
+}
+a {
+  text-decoration: none;
+  margin-top: 17px;
+  color: #b55eff;
+  &:hover {
+    color: white;
+  }
+}
+
+
 .Clicker {
   display: flex;
   align-items: center;

@@ -10,8 +10,8 @@
           "genre" : "Alt Rock",
           "date" : "1997",
           "link" : "https://open.spotify.com/album/6dVIqQ8qmQ5GBnJ9shOYGE?si=v5ExHgtUQc64xPOxTdppRA",
-          "avatar" : "okcomputer.jpg",
-          "artist_avatar" : "radioheadAvatar.jpg",
+          "avatar" : "musicImg/okcomputer.jpg",
+          "artist_avatar" : "musicImg/radioheadAvatar.jpg",
           "id" : 1
         },
 
@@ -23,8 +23,8 @@
           "genre" : "IDM",
           "date" : "2002",
           "link" : "https://open.spotify.com/album/7Lou3RDk6NswmbzBMhro24?si=HbqKM2nPTsyuXd1_q1LfeA",
-          "avatar" : "geogaddi.jpg",
-          "artist_avatar" : "bocAvatar.jpg",
+          "avatar" : "musicImg/geogaddi.jpg",
+          "artist_avatar" : "musicImg/bocAvatar.jpg",
           "id" : 2
         },
 
@@ -36,8 +36,8 @@
           "genre" : "Dream Pop",
           "date" : "1999",
           "link" : "https://open.spotify.com/album/5K4YFkTizFoMOyN5Khfp7G?si=X0EG9ymhTc-spmS0X_QZrQ",
-          "avatar" : "fishmans.jpg",
-          "artist_avatar" : "fishmansAvatar.jpg",
+          "avatar" : "musicImg/fishmans.jpg",
+          "artist_avatar" : "musicImg/fishmansAvatar.jpg",
           "id" : 3
         },
 
@@ -49,8 +49,8 @@
           "genre" : "Shoegaze",
           "date" : "1991",
           "link" : "https://open.spotify.com/album/3GH4IiI6jQAIvnHVdb5FB6?si=DpRJeBeDR--IPk8c2FegPQ",
-          "avatar" : "mbv.jpg",
-          "artist_avatar" : "mbvAvatar.jpeg",
+          "avatar" : "musicImg/mbv.jpg",
+          "artist_avatar" : "musicImg/mbvAvatar.jpeg",
           "id" : 4
         },
 
@@ -62,8 +62,8 @@
           "genre" : "Abstract Rap",
           "date" : "2004",
           "link" : "https://open.spotify.com/album/19bQiwEKhXUBJWY6oV3KZk?si=ZWTDqCMLSd6wEqs2ug5YrQ",
-          "avatar" : "madvillainy.jpg",
-          "artist_avatar" : "madvillainyAvatar.jpg",
+          "avatar" : "musicImg/madvillainy.jpg",
+          "artist_avatar" : "musicImg/madvillainyAvatar.jpg",
           "id" : 5
         },
 
@@ -75,8 +75,8 @@
           "genre" : "Ambient",
           "date" : "2007",
           "link" : "https://open.spotify.com/album/6cHPEbPryLpH5VX5Eb1Vvo?si=08l2uHfWRv6XkrZQWxGk0g",
-          "avatar" : "SoTL.jpeg",
-          "artist_avatar" : "SoTLAvatar.jpg",
+          "avatar" : "musicImg/SoTL.jpeg",
+          "artist_avatar" : "musicImg/SoTLAvatar.jpg",
           "id" : 6
         }
       ]

@@ -1,6 +1,7 @@
 .MegaDiv {
-  display: none;
+  display: block;
   position: fixed;
+  pointer-events: none;
   transition: 850ms;
   z-index: 100;
 }
@@ -8,6 +9,8 @@
 .MegaDiv.active {
   display: block !important;
   transition: 850ms;
+  pointer-events: auto;
+
 }
 
 .Transition {
@@ -44,10 +47,14 @@
 
 .menu-bars {
   margin-left: 12px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   font-size: 2rem;
   background: none;
   transition: top 0.4s;
+
+  &:hover {
+    transition: 0.4s;
+  }
 }
 
 .nav-menu {

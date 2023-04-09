@@ -12,11 +12,10 @@ import './Header.scss';
 export default function Header(): JSX.Element {
 
 	const navigate: NavigateFunction = useNavigate();
-	const isAuthorized: boolean = false;
 	return (
-		<Box sx={{flexGrow: 1}}>
+		<Box sx={{flexGrow: 1}} className={'Header'}>
 			<AppBar position={"static"} className={'AppBar'}>
-				<Toolbar className={'Header'}>
+				<Toolbar className={'Panel'}>
 					<Icon>
 						<AccessibleForwardOutlined/>
 					</Icon>
@@ -27,23 +26,22 @@ export default function Header(): JSX.Element {
 						Based Place
 					</Typography>
 					<Box sx={{flexGrow: 1}}>
-						<Grid container spacing={0} minHeight={40} maxHeight={40} minWidth={920} display="flex"
-							  justifyContent="flex-start" alignContent="center">
-							<Grid ml={10} mr={10}>
+						<Grid className={"GridMain"} container spacing={0} item sx={{ marginLeft: 2, marginRight: 2 }} minHeight={40} maxHeight={40} >
+							<Grid>
 								<Button onClick={() => navigate('/')} className={'Button'} variant="text"><Typography
 									className={'Typography'}>Главная</Typography></Button>
 							</Grid>
-							<Grid mr={10}>
+							<Grid >
 								<Button onClick={() => navigate('/base')} className={'Button'}
 										variant="text"><Typography
 									className={'Typography'}>База</Typography></Button>
 							</Grid>
-							<Grid mr={10}>
+							<Grid >
 								<Button onClick={() => navigate('/graphics')} className={'Button'}
 										variant="text"><Typography
 									className={'Typography'}>Графики</Typography></Button>
 							</Grid>
-							<Grid mr={10}>
+							<Grid>
 								<Button onClick={() => navigate('/talant')} className={'Button'}
 										variant="text"><Typography
 									className={'Typography'}>Талант</Typography></Button>
@@ -52,12 +50,13 @@ export default function Header(): JSX.Element {
 					</Box>
 					<Typography
 						mr={'2.5vh'}
+						ml={'2.5vh'}
 						fontWeight={'650'}
 					>
-						Твой ник ебать
+						 Pixerell
 					</Typography>
-					<Avatar alt="Papich Gaming"
-							src="https://lh3.googleusercontent.com/2h24Z51H2xjftUC1BcH6kIj_JFuAtJAc4XlufhGaFtsfRS_s9OrEQb0M2twJxsjeL-cI15EJMO1_TuEnwNMczZXbg2mYe7-dJd9V=w600"/>
+					<Avatar alt="Pixerell"
+							src="src/workingImages/pixerell.png"/>
 				</Toolbar>
 			</AppBar>
 		</Box>

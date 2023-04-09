@@ -2,27 +2,17 @@ import {AccessibleForwardOutlined} from "@mui/icons-material";
 import {Button, Icon} from "@mui/material";
 import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
+import scrollFunction from "../../helpers/scrollFunction";
 import './Sidebar.scss';
 import {SidebarData} from "./SidebarData";
+
 
 export default function Sidebar(): JSX.Element {
 	const [sidebar, setSidebar] = useState(false)
 
 	window.onscroll = () => {
-		scrollFunction()
+		scrollFunction("side")
 	};
-
-	function scrollFunction(): void {
-		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-			// @ts-ignore
-			document.getElementById("side").style.top = "0";
-			console.log('moved?')
-		} else {
-			// @ts-ignore
-			document.getElementById("side").style.top = "70px";
-		}
-	}
-
 
 	const showSidebar: () => void = () => setSidebar(!sidebar)
 

@@ -1,12 +1,25 @@
-.Header {
+.Panel {
   background-color: #200C36;
   min-height: 70px !important;
 
 }
 
+@media (max-width: 450px) {
+  .Header {
+    display: none;
+  }
+}
+
 .Button {
   color: white !important;
   text-transform: unset !important;
+}
+
+.GridMain {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
 .Typography {
