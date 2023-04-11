@@ -1,0 +1,81 @@
+
+
+.projectCard {
+  padding: 0 0 0 0 !important;
+  margin: 0 0 0 0 !important;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 3px -3px 3px rgba(181, 118, 248, 0.51);
+
+}
+
+.projectCardBody {
+  margin: 0 0 0 0 !important;
+  padding: 0 0 0 0 !important;
+}
+
+.cardContents {
+  padding: 0 0 0 0 !important;
+  margin: 20px 0 0 20px !important;
+  color: white !important;
+}
+
+.smallDescText {
+  opacity: 0.8;
+}
+
+.cardActions {
+  margin-left: 10px !important;
+}
+
+@media (max-width: 500px) {
+  .cardClass {
+    min-width: 0;
+    max-width: 300px;
+    min-height: 0;
+    max-height: 240px;
+  }
+  .projectCard {
+    min-width: 0;
+    max-width: 300px;
+  }
+  .cardMedia {
+   overflow: hidden;
+  }
+}
+
+@media (max-width: 400px) {
+  .cardClass {
+    min-width: 0 !important;
+    max-width: 300px !important;
+    min-height: 0;
+    max-height: 300px;
+  }
+  .projectCard {
+    min-width: 0 !important;
+    max-width: 300px !important;
+  }
+}
+
+@media (max-width: 200px) {
+  .cardClass {
+    min-width: 0 !important;
+    max-width: 100px !important;
+    min-height: 0;
+    max-height: 100px;
+    width: 100%;
+  }
+  .projectCard {
+    min-width: 0 !important;
+    max-width: 100px !important;
+    width: 100%;
+  }
+}
+/*
+                <CardActions className={'cardActions'}>
+                    <Link rel={'noreferrer'} target={'_blank'} to={card.projectLink}>
+                        <Button size="small">Ссылка</Button>
+                    </Link>
+                </CardActions>
+ */

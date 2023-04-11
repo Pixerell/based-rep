@@ -57,7 +57,7 @@ function Footer(): JSX.Element {
                     <Icon className={'ItemIcon'}>
                         <SurroundSoundIcon/>
                     </Icon>
-                    <a rel={'noreferrer'} target={'_blank'} href={'https://soundcloud.com/user-389858854'}>Pixerell</a>
+                    <a className="scLink" rel={'noreferrer'} target={'_blank'} href={'https://soundcloud.com/user-389858854'}>Pixerell</a>
                 </div>
             </div>
 

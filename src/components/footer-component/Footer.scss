@@ -11,13 +11,19 @@
     display: none;
   }
 }
-a {
-  text-decoration: none;
-  margin-top: 17px;
-  color: #b55eff;
-  &:hover {
-    color: white;
+
+
+@media (max-height: 800px) {
+
+  .Footer {
+    height: auto;
+    min-height: 200px !important;
   }
+}
+
+.scLink {
+  color: #f246ff;
+  opacity: 1 !important;
 }
 
 

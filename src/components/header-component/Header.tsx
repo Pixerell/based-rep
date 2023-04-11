@@ -1,7 +1,6 @@
 import {AccessibleForwardOutlined} from "@mui/icons-material";
 import {
 	AppBar,
-	Avatar,
 	Box, Button, Grid, Icon, Toolbar, Typography
 } from "@mui/material";
 import React from 'react';
@@ -26,7 +25,7 @@ export default function Header(): JSX.Element {
 						Based Place
 					</Typography>
 					<Box sx={{flexGrow: 1}}>
-						<Grid className={"GridMain"} container spacing={0} item sx={{ marginLeft: 2, marginRight: 2 }} minHeight={40} maxHeight={40} >
+						<Grid className={"GridMain"} container spacing={0} item sx={{ marginLeft: '-3.5%', marginRight: 2 }} minHeight={40} maxHeight={40} >
 							<Grid>
 								<Button onClick={() => navigate('/')} className={'Button'} variant="text"><Typography
 									className={'Typography'}>Главная</Typography></Button>
@@ -48,15 +47,6 @@ export default function Header(): JSX.Element {
 							</Grid>
 						</Grid>
 					</Box>
-					<Typography
-						mr={'2.5vh'}
-						ml={'2.5vh'}
-						fontWeight={'650'}
-					>
-						 Pixerell
-					</Typography>
-					<Avatar alt="Pixerell"
-							src="src/workingImages/pixerell.png"/>
 				</Toolbar>
 			</AppBar>
 		</Box>
