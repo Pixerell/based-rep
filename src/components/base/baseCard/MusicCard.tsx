@@ -56,10 +56,11 @@ export default function MusicCard({card}): JSX.Element {
                    <CardHeader className={"CardHeader"}
                        title={card.album}
                        titleTypographyProps={{ color: 'white' }}
+                               subheaderTypographyProps={{color:'white'}}
                        subheader={card.artist +  " - " + card.genre}
                    />
                    <CardContent>
-                       <Typography variant="body2" color="textSecondary">
+                       <Typography variant="body2" className={"CardSmallDesc"}>
                            {card.smallDesc}
                        </Typography>
                    </CardContent>

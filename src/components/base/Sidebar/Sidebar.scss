@@ -57,6 +57,13 @@
   }
 }
 
+a {
+  text-decoration: none;
+  color: #200C36;
+  transition: 0.4s;
+
+}
+
 .nav-menu {
   background-color: #180c38;
   width: 200px;
@@ -115,5 +122,21 @@
 
 span {
   margin-left: 16px;
+}
+
+@media (max-width: 450px) {
+  .MegaDiv {
+    display: none !important;
+  }
+  .MegaDiv.active {
+    display: none !important;
+  }
+  .navbar {
+    display: none;
+  }
+  .navbar.active {
+    display: none;
+  }
+
 }
 

@@ -2,6 +2,19 @@
     backface-visibility: hidden;
 }
 
+a {
+    text-decoration: none;
+    margin-top: 17px;
+    color: #b55eff;
+}
+
+
+a:hover {
+    color: white;
+}
+
+
+
 .noise::before {
     position: fixed;
     top: 0;

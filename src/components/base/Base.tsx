@@ -1,30 +1,20 @@
 import { Box, Grid } from "@mui/material";
-import React, { useEffect, useState } from "react";
+import React from "react";
+import {MUSIC_CARDS_URL} from "../../apiUrls";
 import Preloader from "../helpers/preloader-component/Preloader";
+import useCardsFetcher from "../helpers/useCardsFetcher";
 import './Base.scss';
 import MusicCard from "./baseCard/MusicCard";
 import Sidebar from "./Sidebar/Sidebar";
 
 function Base(): JSX.Element {
-	const [cardsN, setCards] = useState<any[]>([]);
-	const [data, setData] = useState(false);
 
-	useEffect(() => {
-		fetch('http://localhost:8000/musicCards')
-			// tslint:disable-next-line:typedef
-			.then(res => res.json())
-			// tslint:disable-next-line:typedef
-			.then(data => {
-				setCards(data);
-				setData(true);
-			});
-	}, []);
-
+	const {cardsN, data} = useCardsFetcher(MUSIC_CARDS_URL)
 
 	return (
 		<div className={'MegaDivBase'}>
 			<Sidebar />
-			<div className={'bg'}>
+			<div className={'bgBase'}>
 				{data ? (
 					<span>
             <h1 className={'musicHead'}>
