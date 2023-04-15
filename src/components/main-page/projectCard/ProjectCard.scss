@@ -15,15 +15,89 @@
   padding: 0 0 0 0 !important;
 }
 
+.cardClass {
+  min-width: 330px;
+  opacity: 0.95;
+  padding: 0;
+  margin:0;
+}
+
 .cardContents {
   padding: 0 0 0 0 !important;
   margin: 20px 0 0 20px !important;
   color: white !important;
 }
 
-.smallDescText {
-  opacity: 0.8;
+.cardMedia {
+  height: 300px;
+  width: 100%;
 }
+
+
+.contentWrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.smallDescText {
+  position: absolute;
+  color: cyan !important;
+  transform: translate(20px, -10px);
+  opacity: 0.8;
+  z-index: 4;
+}
+
+.cardMediaOverlay {
+  position: absolute;
+  opacity: .9;
+  transform: translateY(-100%);
+  z-index: 3;
+}
+
+.blackTint {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  background-color: black;
+  opacity: 0;
+  z-index: 5;
+
+}
+
+.cardClass:hover {
+  .cardMedia {
+    opacity: 0.1;
+    transition: 0.5s;
+  }
+
+ .cardMediaOverlay {
+    transform: translateY(0%);
+    transition: 0.01s ease-out cubic-bezier(0,.75,0,1);
+  }
+  .img {
+    opacity: 1;
+  }
+
+ .smallDescText {
+    translate: 20px 100px;
+  }
+}
+
+/*
+.cardClass:hover .cardMedia {
+  opacity: 0.1;
+  transition: 0.5s;
+}
+
+.cardClass:hover .cardMediaOverlay {
+  opacity: 1;
+  transform: translateY(0%);
+  transition: 0.1s ease-out cubic-bezier(0,.75,0,1);
+}
+
+.cardClass:hover .smallDescText {
+  translate: 20px 100px;
+}
+*/
 
 .cardActions {
   margin-left: 10px !important;
@@ -72,10 +146,41 @@
     width: 100%;
   }
 }
-/*
-                <CardActions className={'cardActions'}>
-                    <Link rel={'noreferrer'} target={'_blank'} to={card.projectLink}>
-                        <Button size="small">Ссылка</Button>
-                    </Link>
-                </CardActions>
- */
+
+.animate {
+  animation-name: afterHover;
+  animation-duration: 1s;
+}
+
+.animate1 {
+  animation-name: afterHoverTint;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  transition: ease-in cubic-bezier(0,.75,0,1);
+}
+
+@keyframes afterHover {
+  0% {
+    transform: translate(0px, 0px);
+  }
+
+  50% {
+    transform: translate(10px, -15px);
+    rotate: 3deg;
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+
+}
+
+
+@keyframes afterHoverTint {
+  0%{
+  }
+  100% {
+    opacity: 0.8 ;
+    background-color: black;
+  }
+
+}
