@@ -7,6 +7,7 @@
           "projectLink" : "dummylink",
           "language" : "C#",
           "projectImg" : "projectImg/aviasalesImg.png",
+          "projectImg1" : "projectImg/aviasalesImg2.png",
           "id" : 1
         },
         {
@@ -16,6 +17,7 @@
           "projectLink" : "dummylink",
           "language" : "C#",
           "projectImg" : "projectImg/aviasalesImg.png",
+          "projectImg1" : "projectImg/aviasalesImg.png",
           "id" : 2
         },
         {
@@ -25,6 +27,7 @@
           "projectLink" : "dummylink",
           "language" : "C#",
           "projectImg" : "projectImg/aviasalesImg.png",
+          "projectImg1" : "projectImg/aviasalesImg.png",
           "id" : 3
         }
 

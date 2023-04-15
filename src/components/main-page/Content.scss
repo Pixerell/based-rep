@@ -9,11 +9,14 @@
     width: 100%;
     min-height: 1080px;
     height: 100% !important;
+    font-size: 1.5rem;
+    line-height: 1.55;
     background-color: var(--background-color);}
 
 .Base {
     display: flex;
     flex-direction: row;
+
     width: 100%;
 }
 
@@ -22,6 +25,11 @@
     flex-direction: column;
     width: 60%;
     color: white;
+}
+
+.Bottomclass {
+    margin-top: 40px;
+    width: 60%;
 }
 
 .HeadTitle {
@@ -39,9 +47,11 @@
 .HeadDescription {
     display: flex;
     flex-direction: column;
-    font-size: 1.5rem;
-    line-height: 1.55;
     align-self: center;
+}
+
+.BottomDescription {
+
 }
 
 .Codetextblock {
