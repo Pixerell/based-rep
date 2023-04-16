@@ -23,8 +23,8 @@ export default function ProjectCard({card}:any): JSX.Element {
         console.log("unhover")
 
     };
-    
 
+    
     return (
         <div className="projectCard">
             <Card elevation={2} className="cardClass" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
@@ -35,9 +35,17 @@ export default function ProjectCard({card}:any): JSX.Element {
                         </Typography>
                     </CardContent>
                     <div className='contentWrapper'>
-                        <Typography variant="body2" className={`smallDescText ${isHovering ? "animate" : ""}`}>
-                            {card.projectSmallDesc}
-                        </Typography>
+                        <div className={`descText ${isHovering ? "animate" : ""}`}>
+                            <Typography variant="body1" className="headDescText">
+                                {card.projectSmallDesc}
+                            </Typography>
+                            <Typography variant="body2" className="bigDescText">
+                                {card.projectSmallDesc}
+                            </Typography>
+                            <Typography variant="body2" className="languageDescText">
+                                {card.language}
+                            </Typography>
+                        </div>
                         <span className={`cardMedia cardMediaOverlay blackTint ${isHovering ? "animate1" : ""}`} />
                         <img alt="cover image card" className={`cardMedia cardMediaOverlay img ${isHovering ? "animate1" : ""}`} src={card.projectImg !== null ? card.projectImg : albumDefaultPhoto}/>
                         <CardMedia className='cardMedia'
