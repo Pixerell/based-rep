@@ -12,14 +12,13 @@ function MainContent(): JSX.Element {
 
 	const {cardsN, data} = useCardsFetcher(PROJECT_CARDS_URL);
 
-
 	return (
 		<div className={'bg'}>
 			{data ? (
 				<div>
 					<div className={'Base'}>
 						<div className={'Headclass'}>
-							<h1 className={'HeadTitle'}>Pixerell</h1>
+							<h1 className={'HeadTitle'} data-glitch="Pixerell">Pixerell</h1>
 							<span className={'Line'}></span>
 							<div className={'HeadDescription'}>
 								<span className={'Codetextblock'}>
@@ -65,10 +64,12 @@ function MainContent(): JSX.Element {
 							</div>
 						</div>
 						<div className={"SideImaging"}>
-							<img className={"MyImage"} alt={"Sexiest Human On The Planet"} src={imageOfMe}/>
-							<div className={"Circle"}/>
-							<div className={"Circle2"}/>
-							<div className={"Circle3"}/>
+							<div className={"images"}>
+								<img className={"MyImage"} alt={"Sexiest Human On The Planet"} src={imageOfMe}/>
+								<div className={"Circle"}/>
+								<div className={"Circle2"}/>
+								<div className={"Circle3"}/>
+							</div>
 						</div>
 					</div>
 					<div className={"cardWrapper"}>
@@ -85,7 +86,6 @@ function MainContent(): JSX.Element {
 					</div>
 					<div className={'Bottomclass'}>
 						<div className={'BottomDescription'}>
-
 							<span className={'Codetextblock1'}>
 								<h4 className={'TextParagraph'}>
 									<span className={'Tagtext'}>&lt;/projects&gt;</span>
@@ -93,7 +93,7 @@ function MainContent(): JSX.Element {
 							</span>
 								<span className={'Codetextblock'}>
 								<h3 className={'TextParagraphBold'}>
-									<span className={'Tagtext'}>&lt;/head&gt;</span>
+									<span className={'Tagtext Finaltext'}>&lt;/head&gt; &#8203; &#8203; &#8203;</span>
 								</h3>
 							</span>
 						</div>

@@ -11,7 +11,10 @@
     height: 100% !important;
     font-size: 1.5rem;
     line-height: 1.55;
-    background-color: var(--background-color);}
+    background-color: var(--background-color);
+    border-color: transparent !important;
+}
+
 
 .Base {
     display: flex;
@@ -30,6 +33,9 @@
 .Bottomclass {
     margin-top: 40px;
     width: 60%;
+    opacity: 0;
+    animation: fadeInMove 3s forwards;
+    animation-delay: 1s;
 }
 
 .HeadTitle {
@@ -39,20 +45,25 @@
     opacity: 0.85;
     margin-bottom: 0;
     margin-left: 10%;
-    margin-top: 72px;
+    margin-top: 48px;
+    overflow: hidden;
+    width: 100%;
     letter-spacing: 0.2em;
+    border-radius: 1px;
 
+    animation:
+            typing 3.5s steps(50, end);
 }
 
 .HeadDescription {
     display: flex;
     flex-direction: column;
-    align-self: center;
+    overflow: hidden;
+    opacity: 0;
+    animation: fadeInMove 3s forwards;
+    animation-delay: 1s;
 }
 
-.BottomDescription {
-
-}
 
 .Codetextblock {
     display: flex;
@@ -91,11 +102,16 @@
     margin: 0 0 0 0
 }
 
+.Finaltext {
+    border-right: 0.3em solid var(--tagtext-color); /* The typwriter cursor */
+    border-radius: 1px;
+    animation:
+            blink-caret .75s step-end infinite;
+}
+
 ul {
     margin: 0;
     padding: 0;
-    // list-style-type: square;
-    // list-style-position: inside;
     list-style: none; /* Remove default bullets */
 
 }
@@ -122,6 +138,15 @@ ul li::before {
     margin-left: 5%;
 }
 
+.images {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    animation: scaleImages 4s forwards;
+    animation-delay: 1.5s;
+}
+
 .MyImage {
     position: relative;
     width: 368px;
@@ -146,8 +171,8 @@ ul li::before {
 .Circle2 {
     background-color: var(--circle-color);
     box-shadow: 1px 1px 3px var(--circle-color);
-    width: 358px;
-    height: 358px;
+    width: 354px;
+    height: 354px;
     margin-top: 15px;
     margin-left: 20px;
     z-index: 3;
@@ -156,11 +181,9 @@ ul li::before {
 .Circle3 {
     background-color: var(--circle-color);
     box-shadow: -1px -1px 3px var(--circle-color);
-    width: 368px;
-    height: 368px;
     opacity: 0.5;
-    margin-top: -10px;
-    margin-left: -20px;
+    margin-top: -5px;
+    margin-left: -10px;
     z-index: 3;
 
 }
@@ -169,10 +192,12 @@ ul li::before {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
+    opacity: 0;
     width: 100%;
     height: 100%;
     margin: 20px 0 0 0;
+    animation: fadeInMove 3s forwards;
+    animation-delay: 1s;
 }
 
 @media (max-width: 875px) {
@@ -186,6 +211,16 @@ ul li::before {
         display: none;
     }
     .HeadDescription {
+        margin: 0 0 0 0 !important;
+        padding: 0 0 0 0 !important;
+        align-self: auto;
+        font-size: calc(1vw + 1vh);
+        word-wrap: break-word;
+        overflow: hidden;
+
+    }
+
+    .BottomDescription {
         margin: 0 0 0 0 !important;
         padding: 0 0 0 0 !important;
         align-self: auto;
@@ -211,9 +246,6 @@ ul li::before {
     }
 }
 
-
-
-
 @keyframes float {
     0% {
         transform: translate(0px, 0px);
@@ -228,3 +260,270 @@ ul li::before {
     }
 }
 
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: var(--tagtext-color) }
+}
+
+
+@keyframes typing {
+    0% {
+        width: 0;
+        border-right: 0.1em solid var(--tagtext-color); /* The typwriter cursor */
+
+    }
+    33% {
+        border-color: transparent;
+    }
+    100% {
+        width: 100%;
+        border-color: transparent;
+
+    }
+
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+
+}
+
+@keyframes fadeInMove {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(0%);
+    }
+    100% {
+        opacity: 1;
+    }
+
+}
+
+@keyframes scaleImages {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+        rotate: -50deg;
+    }
+    50% {
+        scale: (1.25);
+        rotate: 10deg;
+    }
+    100% {
+        scale: (1);
+        opacity: 1;
+        rotate: 0deg;
+    }
+}
+
+
+.HeadTitle:before {
+   content: attr(data-glitch);
+   position: absolute;
+   left: -2px;
+  margin-left: 6%;
+  width: 90%;
+   color: #fff;
+   background-color: var(--background-color);
+   overflow: hidden;
+   clip: rect(0, 900px, 0, 0);
+   animation: noise-before 3s infinite linear alternate-reverse,
+              fadeIn 5s forwards;
+  animation-delay: 5s;
+
+}
+
+.HeadTitle:after {
+  content: attr(data-glitch);
+   position: absolute;
+   margin-left: 5.5%;
+  left: 2px;
+   width: 90%;
+   color: #fff;
+   background-color: var(--background-color);
+   overflow: hidden;
+   clip: rect(0, 900px, 0, 0);
+   animation: noise-after 2s infinite linear alternate-reverse,
+              fadeIn 5s forwards;
+  animation-delay: 5s;
+}
+
+@keyframes noise-before {
+   0% {
+      clip: rect(61px, 9999px, 52px, 0);
+   }
+
+   5% {
+      clip: rect(33px, 9999px, 144px, 0);
+   }
+
+   10% {
+      clip: rect(121px, 9999px, 115px, 0);
+   }
+
+   15% {
+      clip: rect(144px, 9999px, 162px, 0);
+   }
+
+   20% {
+      clip: rect(62px, 9999px, 180px, 0);
+   }
+
+   25% {
+      clip: rect(34px, 9999px, 42px, 0);
+   }
+
+   30% {
+      clip: rect(147px, 9999px, 179px, 0);
+   }
+
+   35% {
+      clip: rect(99px, 9999px, 63px, 0);
+   }
+
+   40% {
+      clip: rect(188px, 9999px, 122px, 0);
+   }
+
+   45% {
+      clip: rect(154px, 9999px, 14px, 0);
+   }
+
+   50% {
+      clip: rect(63px, 9999px, 37px, 0);
+   }
+
+   55% {
+      clip: rect(161px, 9999px, 147px, 0);
+   }
+
+   60% {
+      clip: rect(109px, 9999px, 175px, 0);
+   }
+
+   65% {
+      clip: rect(157px, 9999px, 88px, 0);
+   }
+
+   70% {
+      clip: rect(173px, 9999px, 131px, 0);
+   }
+
+   75% {
+      clip: rect(62px, 9999px, 70px, 0);
+   }
+
+   80% {
+      clip: rect(24px, 9999px, 153px, 0);
+   }
+
+   85% {
+      clip: rect(138px, 9999px, 40px, 0);
+   }
+
+   90% {
+      clip: rect(79px, 9999px, 136px, 0);
+   }
+
+   95% {
+      clip: rect(25px, 9999px, 34px, 0);
+   }
+
+   100% {
+      clip: rect(173px, 9999px, 166px, 0);
+   }
+}
+
+@keyframes noise-after {
+   0% {
+      clip: rect(26px, 9999px, 33px, 0);
+   }
+
+   5% {
+      clip: rect(140px, 9999px, 198px, 0);
+   }
+
+   10% {
+      clip: rect(184px, 9999px, 89px, 0);
+   }
+
+   15% {
+      clip: rect(121px, 9999px, 6px, 0);
+   }
+
+   20% {
+      clip: rect(181px, 9999px, 99px, 0);
+   }
+
+   25% {
+      clip: rect(154px, 9999px, 133px, 0);
+   }
+
+   30% {
+      clip: rect(134px, 9999px, 169px, 0);
+   }
+
+   35% {
+      clip: rect(26px, 9999px, 187px, 0);
+   }
+
+   40% {
+      clip: rect(147px, 9999px, 137px, 0);
+   }
+
+   45% {
+      clip: rect(31px, 9999px, 52px, 0);
+   }
+
+   50% {
+      clip: rect(191px, 9999px, 109px, 0);
+   }
+
+   55% {
+      clip: rect(74px, 9999px, 54px, 0);
+   }
+
+   60% {
+      clip: rect(145px, 9999px, 75px, 0);
+   }
+
+   65% {
+      clip: rect(153px, 9999px, 198px, 0);
+   }
+
+   70% {
+      clip: rect(99px, 9999px, 136px, 0);
+   }
+
+   75% {
+      clip: rect(118px, 9999px, 192px, 0);
+   }
+
+   80% {
+      clip: rect(1px, 9999px, 83px, 0);
+   }
+
+   85% {
+      clip: rect(145px, 9999px, 98px, 0);
+   }
+
+   90% {
+      clip: rect(121px, 9999px, 154px, 0);
+   }
+
+   95% {
+      clip: rect(156px, 9999px, 44px, 0);
+   }
+
+   100% {
+      clip: rect(67px, 9999px, 122px, 0);
+   }
+}

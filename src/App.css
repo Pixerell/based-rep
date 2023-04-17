@@ -22,7 +22,7 @@ a:hover {
     width: 100vw;
     height: 100vh;
     content: "";
-    opacity: .025;
+    opacity: .03;
     z-index: 1337;
     pointer-events: none;
     background: url(noise.gif);

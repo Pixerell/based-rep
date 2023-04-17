@@ -10,11 +10,12 @@ export default function ProjectCard({card}:any): JSX.Element {
     // tslint:disable-next-line:typedef
     let hoverTimeout;
 
+
     const handleMouseEnter: () => void = () => {
         hoverTimeout = setTimeout(() => {
             setIsHovering(true);
             console.log("hover")
-        }, 450)
+        }, 500)
     };
 
     const handleMouseLeave: () => void = () => {
@@ -24,9 +25,12 @@ export default function ProjectCard({card}:any): JSX.Element {
 
     };
 
+    const navigateToLink: (link: string) => void = (link: string) => {
+        window.open(link, "_blank");
+    };
     
     return (
-        <div className="projectCard">
+        <div className="projectCard" onClick={() => navigateToLink(card.projectLink)}>
             <Card elevation={2} className="cardClass" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                 <div className="projectCardBody">
                     <CardContent className="cardContents">
@@ -40,14 +44,17 @@ export default function ProjectCard({card}:any): JSX.Element {
                                 {card.projectSmallDesc}
                             </Typography>
                             <Typography variant="body2" className="bigDescText">
-                                {card.projectSmallDesc}
+                                {card.projectDesc}
                             </Typography>
-                            <Typography variant="body2" className="languageDescText">
-                                {card.language}
-                            </Typography>
+                            <div>
+                                <Typography variant="body2" className="languageDescText">
+                                    {card.language}
+                                </Typography>
+                            </div>
+
                         </div>
                         <span className={`cardMedia cardMediaOverlay blackTint ${isHovering ? "animate1" : ""}`} />
-                        <img alt="cover image card" className={`cardMedia cardMediaOverlay img ${isHovering ? "animate1" : ""}`} src={card.projectImg !== null ? card.projectImg : albumDefaultPhoto}/>
+                        <img alt="cover image card" className={`cardMedia cardMediaOverlay img ${isHovering ? "animate1" : ""}`} src={card.projectImg1 !== null ? card.projectImg1 : albumDefaultPhoto}/>
                         <CardMedia className='cardMedia'
                                    image={card.projectImg !== null ? card.projectImg : albumDefaultPhoto}
                                    title={card.projectName}
