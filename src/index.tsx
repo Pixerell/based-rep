@@ -9,7 +9,7 @@ const BasedTheme: ThemeOptions = createTheme
 ({
 	palette: {
 		background: {
-			default: '#180c38',
+			default: '#080613',
 			paper: '#200c36',
 		},
 		text: {
@@ -18,7 +18,7 @@ const BasedTheme: ThemeOptions = createTheme
 			disabled: '#5d5d5d',
 		},
 		primary: {
-			main: '#FF00E5',
+			main: '#080613',
 		},
 		secondary: {
 			main: '#503657',
