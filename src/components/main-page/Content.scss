@@ -122,11 +122,11 @@ li {
 }
 
 ul li::before {
-    content: "\2022";  /*  \2022 is the CSS Code/unicode for a bullet */
-    color: var(--tagtext-color); /* Change the color */
-    display: inline-block; /* Needed to add space between the bullet and the text */
-    width: 1em; /* Also needed for space (tweak if needed) */
-    margin-left: -1em; /* Also needed for space (tweak if needed) */
+    content: "\2022";
+    color: var(--tagtext-color);
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
 }
 
 .SideImaging {
@@ -272,7 +272,7 @@ ul li::before {
         border-right: 0.1em solid var(--tagtext-color); /* The typwriter cursor */
 
     }
-    33% {
+    42% {
         border-color: transparent;
     }
     100% {

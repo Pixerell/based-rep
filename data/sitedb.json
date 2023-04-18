@@ -92,5 +92,41 @@
           "artist_avatar" : "musicImg/SoTLAvatar.jpg",
           "id" : 6
         }
+      ],
+      "gameCards": [
+        {
+          "gameTitle" : "Celeste",
+          "genre" : "Platformer",
+          "smallDesc" : "Sometimes you need to challenge yourself",
+          "image":  "gameImg/celesteImg.png",
+          "id" : 1
+        },
+        {
+          "gameTitle" : "Dwarf Fortress",
+          "genre" : "Colony Sim",
+          "smallDesc" : "But don't challenge yourself THAT much",
+          "image":  "gameImg/dfImg.jpg",
+          "id" : 2
+        },
+        {
+          "gameTitle" : "Hyper Light Drifter",
+          "genre" : "Isometric Action",
+          "smallDesc" : "A story without words",
+          "image":  "gameImg/hldImg.png",
+          "id" : 3
+        },
+        {
+          "gameTitle" : "Hollow Knight",
+          "genre" : "Metroidvania",
+          "smallDesc" : "No cost too great..",
+          "image":  "gameImg/hkImg.png",
+          "id" : 4
+        }
+      ],
+      "peopleCards": [
+        {
+
+        }
       ]
+
     }

@@ -38,6 +38,7 @@
 .contentWrapper {
   position: relative;
   overflow: hidden;
+  transition: 1s;
 }
 
 .descText {
@@ -50,6 +51,7 @@
   transform: translateY(-100%);
   color: white;
   z-index: 6;
+  transition: 1s;
 }
 
 .headDescText {
@@ -77,7 +79,6 @@
   border-radius: 3px;
   border-color: #080613;
   box-shadow: 1px 1px 0 rgba(0, 0, 0, .25);
-  transition: 1s;
 }
 
 .cardMediaOverlay {
@@ -85,6 +86,7 @@
   opacity: .9;
   transform: translateY(-100%);
   z-index: 3;
+  transition: 0.25s;
 }
 
 .blackTint {
@@ -93,9 +95,9 @@
   background-color: black;
   opacity: 0.2;
   z-index: 5;
+  transition: 0.25s;
 
 }
-
 
 .cardClass:hover {
 
