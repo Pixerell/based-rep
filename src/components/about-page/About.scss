@@ -20,7 +20,9 @@
   text-shadow: 0 0 10px #080613;
   width: 100%;
   text-align: center;
-  color: white !important;
+  color: white;
+  animation: fadeInBg 2s forwards;
+  animation-delay: 7s;
 }
 
 .Wrapper {
@@ -56,4 +58,14 @@ section {
   padding: 2rem;
   background-color: #080613;
   color: white;
+}
+
+
+@keyframes fadeInBg {
+  0%{
+  }
+  100% {
+    opacity: 0.85 ;
+    background-color: black;
+  }
 }

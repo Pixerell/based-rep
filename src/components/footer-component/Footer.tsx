@@ -35,7 +35,7 @@ function Footer(): JSX.Element {
             </div>
             <div className={"Copyright"} onClick={() => {setTimeout(() => {
                 navigate('/about')}, 100)}}>
-                © 2022 Rasslabuxa. All rights protected by Allah.
+                © 2023 Rasslabuxa. All rights protected by Allah.
             </div>
             <div className={'Contacts'}>
                 Контакты

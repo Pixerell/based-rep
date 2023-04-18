@@ -6,36 +6,51 @@
 
 .bgBase {
     background-color: #080613;
-    height: 1630px !important;
+    height: 100%;
+    min-height: 1630px;
     width: 100%;
 }
 
-.musicHead{
+.sectionHead{
     z-index: 1;
     text-align: center;
     color: white;
     width: 100%;
     font-family: 'Space Grotesk', sans-serif;
 
-
-
 }
 
-@media (max-width: 110px) {
-    .musicHead {
-        display: none;
-    }
+.musicCardWrapper {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
-.musicInformation {
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.sectionInformation {
     z-index: 1;
     color: #747083;
     margin: 30px 0 30px 0;
     font-size: 14px;
 }
 
+.cardsContainer {
+    margin-left: 10px;
+    margin-right: 10px;
+}
 .CardContainer {
     flex-direction: row;
 
+}
+
+@media (max-width: 110px) {
+    .sectionHead {
+        display: none;
+    }
 }
 
 @media (max-width: 900px) {

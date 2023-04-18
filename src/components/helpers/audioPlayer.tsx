@@ -2,13 +2,11 @@ export type AudioPlayer = {
     startAudio: () => void;
 };
 
-// tslint:disable-next-line:typedef
-export const setupAudio = (audioUrl: string): AudioPlayer => {
+export const setupAudio: (audioUrl: string) => { startAudio: () => void } = (audioUrl: string) => {
 
     const audio: HTMLAudioElement = new Audio(audioUrl);
 
-    // tslint:disable-next-line:typedef
-    const startAudio = ():void => {
+    const startAudio: () => void = () => {
         audio.play();
     };
 

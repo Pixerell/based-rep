@@ -1,0 +1,55 @@
+
+.AlbumCover {
+
+}
+
+.CardWrap {
+  min-height: 490px !important;
+  z-index: 2;
+}
+.MusicCard {
+  transition: .7s;
+  transform: rotate(0deg);
+}
+
+.MusicCard:hover {
+  transform: translateY(-20px);
+  rotate: 1deg;
+  transition: 0.7s;
+
+}
+
+.CardHeader {
+  padding-bottom: 0 !important;
+  color: white;
+}
+
+.CardSmallDesc {
+  color: white;
+  opacity: 0.8;
+}
+.TypographyDetails {
+  color: white !important;
+}
+
+.afterDetails {
+  display: flex;
+  flex-direction: row;
+  margin-top: 16px;
+}
+
+.albumLink {
+  text-decoration: none;
+  color: #b55eff;
+  margin: 7px 0 0 10px !important;
+  transition: 0.3s;
+}
+
+.expandIcon {
+  color: #b55eff;
+}
+
+.albumLink:hover{
+  color: white;
+  transition: 0.3s;
+}

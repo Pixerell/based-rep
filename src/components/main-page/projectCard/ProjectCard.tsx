@@ -7,8 +7,7 @@ export default function ProjectCard({card}:any): JSX.Element {
 
     const [isHovering, setIsHovering] = useState(false);
 
-    // tslint:disable-next-line:typedef
-    let hoverTimeout;
+    let hoverTimeout : NodeJS.Timeout;
 
 
     const handleMouseEnter: () => void = () => {
