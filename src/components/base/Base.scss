@@ -47,6 +47,23 @@
 
 }
 
+.gameCard--focus {
+    filter: contrast(130%) !important;
+    transform: scale(1.05) !important;
+    transition: 1s !important;
+}
+.gameCard--strongBlur {
+    filter: blur(5px) !important;
+    transform: scale(0.95) !important;
+    transition: 1s !important;
+}
+
+.gameCard--unblur {
+    filter: blur(0);
+    transform: scale(1);
+    transition: 0.5s ease-in-out;
+}
+
 @media (max-width: 110px) {
     .sectionHead {
         display: none;

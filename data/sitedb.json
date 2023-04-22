@@ -23,8 +23,8 @@
           "genre" : "Alt Rock",
           "date" : "1997",
           "link" : "https://open.spotify.com/album/6dVIqQ8qmQ5GBnJ9shOYGE?si=v5ExHgtUQc64xPOxTdppRA",
-          "avatar" : "musicImg/okcomputer.jpg",
-          "artist_avatar" : "musicImg/radioheadAvatar.jpg",
+          "avatar" : "musicFiles/okcomputer.jpg",
+          "artist_avatar" : "musicFiles/radioheadAvatar.jpg",
           "id" : 1
         },
 
@@ -36,8 +36,8 @@
           "genre" : "IDM",
           "date" : "2002",
           "link" : "https://open.spotify.com/album/7Lou3RDk6NswmbzBMhro24?si=HbqKM2nPTsyuXd1_q1LfeA",
-          "avatar" : "musicImg/geogaddi.jpg",
-          "artist_avatar" : "musicImg/bocAvatar.jpg",
+          "avatar" : "musicFiles/geogaddi.jpg",
+          "artist_avatar" : "musicFiles/bocAvatar.jpg",
           "id" : 2
         },
 
@@ -49,8 +49,8 @@
           "genre" : "Dream Pop",
           "date" : "1999",
           "link" : "https://open.spotify.com/album/5K4YFkTizFoMOyN5Khfp7G?si=X0EG9ymhTc-spmS0X_QZrQ",
-          "avatar" : "musicImg/fishmans.jpg",
-          "artist_avatar" : "musicImg/fishmansAvatar.jpg",
+          "avatar" : "musicFiles/fishmans.jpg",
+          "artist_avatar" : "musicFiles/fishmansAvatar.jpg",
           "id" : 3
         },
 
@@ -62,8 +62,8 @@
           "genre" : "Shoegaze",
           "date" : "1991",
           "link" : "https://open.spotify.com/album/3GH4IiI6jQAIvnHVdb5FB6?si=DpRJeBeDR--IPk8c2FegPQ",
-          "avatar" : "musicImg/mbv.jpg",
-          "artist_avatar" : "musicImg/mbvAvatar.jpeg",
+          "avatar" : "musicFiles/mbv.jpg",
+          "artist_avatar" : "musicFiles/mbvAvatar.jpeg",
           "id" : 4
         },
 
@@ -75,8 +75,8 @@
           "genre" : "Abstract Rap",
           "date" : "2004",
           "link" : "https://open.spotify.com/album/19bQiwEKhXUBJWY6oV3KZk?si=ZWTDqCMLSd6wEqs2ug5YrQ",
-          "avatar" : "musicImg/madvillainy.jpg",
-          "artist_avatar" : "musicImg/madvillainyAvatar.jpg",
+          "avatar" : "musicFiles/madvillainy.jpg",
+          "artist_avatar" : "musicFiles/madvillainyAvatar.jpg",
           "id" : 5
         },
 
@@ -88,8 +88,8 @@
           "genre" : "Ambient",
           "date" : "2007",
           "link" : "https://open.spotify.com/album/6cHPEbPryLpH5VX5Eb1Vvo?si=08l2uHfWRv6XkrZQWxGk0g",
-          "avatar" : "musicImg/SoTL.jpeg",
-          "artist_avatar" : "musicImg/SoTLAvatar.jpg",
+          "avatar" : "musicFiles/SoTL.jpeg",
+          "artist_avatar" : "musicFiles/SoTLAvatar.jpg",
           "id" : 6
         }
       ],
@@ -98,35 +98,64 @@
           "gameTitle" : "Celeste",
           "genre" : "Platformer",
           "smallDesc" : "Sometimes you need to challenge yourself",
-          "image":  "gameImg/celesteImg.png",
+          "image":  "gameFiles/celesteImg.png",
+          "torrentFile": "gameFiles/Celeste [L] [RUS + ENG + 7] (2019) (1.4.0.0) [EGS-Rip] [rutracker-6087855].torrent",
           "id" : 1
         },
         {
           "gameTitle" : "Dwarf Fortress",
           "genre" : "Colony Sim",
           "smallDesc" : "But don't challenge yourself THAT much",
-          "image":  "gameImg/dfImg.jpg",
+          "image":  "gameFiles/dfImg.jpg",
+          "torrentFile": "gameFiles/Dwarf Fortress Slaves to Armok God of Blood Chapter II Dwarf Fortress [P] [ENG] (2022) (50.07) [Portable] [rutracker-6319699].torrent",
           "id" : 2
         },
         {
           "gameTitle" : "Hyper Light Drifter",
           "genre" : "Isometric Action",
           "smallDesc" : "A story without words",
-          "image":  "gameImg/hldImg.png",
+          "image":  "gameFiles/hldImg.png",
+          "torrentFile": "gameFiles/Hyper Light Drifter [L] [RUS + ENG + 5] (2016) (7212017 hotfix) [GOG] [rutracker-6260865].torrent",
           "id" : 3
         },
         {
           "gameTitle" : "Hollow Knight",
           "genre" : "Metroidvania",
           "smallDesc" : "No cost too great..",
-          "image":  "gameImg/hkImg.png",
+          "image":  "gameFiles/hkImg.png",
+          "torrentFile": "gameFiles/Hollow Knight [L] [RUS + ENG + 8] (2017) (1.5.78.11833 + 2 DLC) [GOG] [rutracker-5382613].torrent",
           "id" : 4
         }
       ],
       "peopleCards": [
         {
-
+          "pseudonym": "Ryan Gosling",
+          "fullName": "Ryan Gosling",
+          "age": 40,
+          "smallDesc": "Актёр, с самым душевным лицом в мире",
+          "bigDesc": "aaaaaa",
+          "image": "",
+          "id": 1
+        },
+        {
+          "pseudonym": "Ecco2k",
+          "fullName": "Van dohildon",
+          "age": 30,
+          "smallDesc": "Музыкант, предприниматель, владелец секс-подземелья",
+          "bigDesc": "aaaaaa",
+          "image": "",
+          "id": 2
+        },
+        {
+          "pseudonym": "Pudge",
+          "fullName": "Пудж, Буча, Пейджер, Бабиджон, Чоп-чоп и другие",
+          "age": "?",
+          "smallDesc": "",
+          "bigDesc": "aaaaaa",
+          "image": "",
+          "id": 3
         }
+
       ]
 
     }

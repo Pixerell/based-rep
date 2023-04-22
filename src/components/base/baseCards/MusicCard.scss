@@ -10,6 +10,8 @@
 .MusicCard {
   transition: .7s;
   transform: rotate(0deg);
+  border: 1px solid rgba(#e880ff, 0.2);
+  box-shadow: 0 0 10px rgba(#3a1b79, 1);
 }
 
 .MusicCard:hover {
