@@ -12,14 +12,40 @@ function Base(): JSX.Element {
 
 	const {cardsN: musicCardsN, data : musicData} = useCardsFetcher(MUSIC_CARDS_URL)
 	const {cardsN: gameCardsN, data: gameData} = useCardsFetcher(GAME_CARDS_URL)
-	const [showCards, setShowCards] = useState(false); // State to track card visibility
+	const [showCards, setShowCards] = useState(false);
 
 	useEffect(() => {
 		const timer: NodeJS.Timeout = setTimeout(() => {
 			setShowCards(true);
-		}, 300); // Set a delay of 1 second (1000ms) to show the cards
-		return () => clearTimeout(timer); // Cleanup the timer on unmount
+		}, 300);
+		return () => clearTimeout(timer);
 	}, []);
+
+	const handleGameCardHover: (event: React.MouseEvent<HTMLDivElement>) => void = (event: React.MouseEvent<HTMLDivElement>) => {
+		const hoveredCardFirstChild: ChildNode | null = event.currentTarget.firstChild;
+		if (hoveredCardFirstChild instanceof HTMLElement) {
+			const hoveredCardId: number = parseInt(hoveredCardFirstChild.id, 10);
+			gameCardsN.forEach((card: any) => {
+				if (card.id !== hoveredCardId) {
+					const cardElement: HTMLElement | null = document.getElementById(`${card.id}`);
+					const hoveredCardElement: HTMLElement | null = document.getElementById(`${hoveredCardId}`);
+					if (cardElement && hoveredCardElement) {
+						cardElement.classList.add("gameCard--strongBlur");
+						hoveredCardElement.classList.add("gameCard--focus");
+					}
+				}
+			});
+		}
+	};
+
+	const handleGameCardLeave: () => void = () => {
+		const gameCards: NodeListOf<HTMLElement> = document.querySelectorAll<HTMLElement>(".gameCard");
+		gameCards.forEach((card: HTMLElement) => {
+			card.classList.remove("gameCard--strongBlur");
+			card.classList.remove("gameCard--focus");
+			card.classList.add("gameCard--unblur");
+		});
+	};
 
 	return (
 		<div className={'MegaDivBase'}>
@@ -55,11 +81,13 @@ function Base(): JSX.Element {
 						  </div>
 						</h1>
 						<Box className='cardsContainer' padding={2}>
-						  <Grid container spacing={3} alignItems="stretch">
+						  <Grid container spacing={2} alignItems="stretch" justifyContent="center">
 							  {gameCardsN.map((cardN: any) => (
 								  <Grid item key={cardN.id} xs={6} md={4} lg={2}
+										onMouseEnter={handleGameCardHover}
+										onMouseLeave={handleGameCardLeave}
 										className={showCards ? "musicCardWrapper show" : "musicCardWrapper"}
-										style={{ transitionDelay: `${cardN.id * 120}ms` }}>
+										style={{ transitionDelay: `${cardN.id * 120}ms`, margin: '0 50px' }}>
 									  <GameCard card={cardN} />
 								  </Grid>
 							  ))}
