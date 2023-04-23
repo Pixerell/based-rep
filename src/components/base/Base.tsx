@@ -1,17 +1,19 @@
 import { Box, Grid } from "@mui/material";
 import React, {useEffect, useState} from "react";
-import {GAME_CARDS_URL, MUSIC_CARDS_URL} from "../../apiUrls";
+import {GAME_CARDS_URL, MUSIC_CARDS_URL, PEOPLE_CARDS_URL} from "../../apiUrls";
 import Preloader from "../helpers/preloader-component/Preloader";
 import useCardsFetcher from "../helpers/useCardsFetcher";
 import './Base.scss';
+import GameCard from "./baseCards/GameCard";
 import MusicCard from "./baseCards/MusicCard";
-import GameCard from "./GameCard";
+import PeopleCard from "./baseCards/PeopleCard";
 import Sidebar from "./Sidebar/Sidebar";
 
 function Base(): JSX.Element {
 
 	const {cardsN: musicCardsN, data : musicData} = useCardsFetcher(MUSIC_CARDS_URL)
 	const {cardsN: gameCardsN, data: gameData} = useCardsFetcher(GAME_CARDS_URL)
+	const {cardsN: peopleCardsN, data: peopleData} = useCardsFetcher(PEOPLE_CARDS_URL)
 	const [showCards, setShowCards] = useState(false);
 
 	useEffect(() => {
@@ -53,6 +55,43 @@ function Base(): JSX.Element {
 			<div className={'bgBase'}>
 				{musicData && gameData ? (
 				<div>
+					<span className="gameSection">
+						<h1 className={'sectionHead'}>
+						  Games
+						  <div className={'sectionInformation'}>
+							  Я верю в то, что игры - высшая форма искусства из-за их особой интерактивности, которой не достичь ни в каком другом медиуме. Ни в коем случае не нажимай на карточки, я точно не добавил торрент файлы честно честно
+						  </div>
+						</h1>
+						<Box className='cardsContainer' padding={2}>
+						  <Grid container spacing={2} alignItems="stretch" justifyContent="center">
+							  {gameCardsN.map((cardN: any) => (
+								  <Grid item key={cardN.id} xs={6} md={4} lg={2}
+										onMouseEnter={handleGameCardHover}
+										onMouseLeave={handleGameCardLeave}
+										className={showCards ? "musicCardWrapper show" : "musicCardWrapper"}
+										style={{ transitionDelay: `${cardN.id * 120}ms`, margin: '0 50px' }}>
+									  <GameCard card={cardN} />
+								  </Grid>
+							  ))}
+						  </Grid>
+						</Box>
+					</span>
+					<span className="peopleSection">
+						<h1 className={'sectionHead'}>People
+						  <div className={'sectionInformation'}>Величайшие личности планеты, прошу заметить что все эти личности - буквально я (у меня острая шизофрения)</div>
+						</h1>
+						<Box className='cardsContainer' padding={2}>
+						  <Grid container spacing={2} alignItems="stretch" justifyContent="center">
+							  {peopleCardsN.map((cardN: any) => (
+								  <Grid item key={cardN.id} xs={6} md={4} lg={3}
+										className={showCards ? "musicCardWrapper show" : "musicCardWrapper"}
+										style={{ transitionDelay: `${cardN.id * 120}ms`, margin: '30px 60px' }}>
+									  <PeopleCard card={cardN} />
+								  </Grid>
+							  ))}
+						  </Grid>
+						</Box>
+					</span>
 					<span className="musicSection">
 						<h1 className={'sectionHead'}>
 						  Music
@@ -73,30 +112,6 @@ function Base(): JSX.Element {
 						  </Grid>
 						</Box>
 				  </span>
-					<span className="gameSection">
-						<h1 className={'sectionHead'}>
-						  Games
-						  <div className={'sectionInformation'}>
-							  Я верю в то, что игры - высшая форма искусства из-за их особой интерактивности, которой не достичь ни в каком другом медиуме.
-						  </div>
-						</h1>
-						<Box className='cardsContainer' padding={2}>
-						  <Grid container spacing={2} alignItems="stretch" justifyContent="center">
-							  {gameCardsN.map((cardN: any) => (
-								  <Grid item key={cardN.id} xs={6} md={4} lg={2}
-										onMouseEnter={handleGameCardHover}
-										onMouseLeave={handleGameCardLeave}
-										className={showCards ? "musicCardWrapper show" : "musicCardWrapper"}
-										style={{ transitionDelay: `${cardN.id * 120}ms`, margin: '0 50px' }}>
-									  <GameCard card={cardN} />
-								  </Grid>
-							  ))}
-						  </Grid>
-						</Box>
-					</span>
-					<span>
-
-					</span>
 				</div>
 
 				) :

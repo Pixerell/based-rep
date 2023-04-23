@@ -1,6 +1,6 @@
 import {Card, CardMedia, Typography} from '@mui/material'
 import React from "react";
-import albumDefaultPhoto from "../../workingImages/soundcloud_Icon.png";
+import albumDefaultPhoto from "../../../workingImages/soundcloud_Icon.png";
 import './GameCard.scss'
 
 export default function GameCard({card}:any): JSX.Element {
