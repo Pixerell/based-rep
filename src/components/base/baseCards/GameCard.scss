@@ -3,7 +3,8 @@
 }
 
 .gameCard {
-  //overflow: hidden;
+  position: relative;
+  overflow: hidden;
   height: 500px;
   border: 1px solid var(--border-color);
   box-shadow: 0 0 10px var(--border-color);
@@ -37,7 +38,6 @@
   .text {
     position: relative;
     font-family: "Montserrat";
-   // font-size: 24px;
     font-size: calc(0.024 * min(100vw, 100vh));
     word-break: break-word;
     font-weight: 700 !important;
@@ -52,6 +52,9 @@
     border-color: #080613;
     box-shadow: 1px 1px 0 rgba(0, 0, 0, .25);
   }
+
+  .topText {
+  }
   .bottomText {
     display: flex;
     justify-self: flex-end;
@@ -65,5 +68,23 @@
             1px -1px 0 #000,
             -1px 1px 0 #000,
             1px 1px 0 #000;
+  }
+}
+
+@media (max-width: 640px) {
+  .gameCard {
+    height: 300px;
+  }
+}
+
+@media (max-width: 360px) {
+  .gameCard {
+    height: 150px;
+  }
+}
+
+@media (max-width: 200px) {
+  .gameCard {
+    height: 70px;
   }
 }

@@ -1,0 +1,221 @@
+.rootCard {
+  position: relative;
+  height: 550px;
+  transform-style: preserve-3d;
+  transition: transform 1s ease-out;
+  :hover {
+    cursor: pointer;
+  }
+}
+
+.peopleCard {
+  height: 100%;
+  overflow: hidden !important;
+  border: 1px solid var(--border-color);
+  border-radius: 30px;
+  box-shadow: 0 0 10px var(--border-color);
+  transform-style: preserve-3d;
+  transition: transform 1s ease-out;
+}
+
+.peopleCardMedia {
+  object-fit: contain !important;
+  overflow: hidden;
+  filter: grayscale(30%);
+  height: 550px;
+  opacity: 0.9;
+  z-index: 6;
+  transition: 1.5s;
+}
+
+.prev {
+  transform: translateX(100%);
+  transition: 2.5s;
+}
+.prevSmallDesc {
+  transform: translateX(150%);
+  transition: 2.5s;
+}
+
+.prevPeopleOuter {
+  transform: translateY(-320%);
+  transition: 2.5s;
+  transition-delay: 0.05s !important;
+}
+
+.peopleCardMedia2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  transform: translateX(-100%);
+  transition: 1.5s;
+}
+
+
+.blackTint1 {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  background-color: black;
+  opacity: 0;
+  z-index: 7;
+  transition: 1s;
+}
+
+.next {
+  transform: translateX(0%) !important;
+  transition: 2.5s;
+}
+.nextText {
+  transform: translateX(0%) !important;
+  transition: 2.5s;
+  transition-delay: 1s !important;
+}
+
+.nextTint {
+  opacity: 0.85;
+  transition: 2.5s;
+  transition-delay: 1.2s;
+}
+
+.peopleSmallDesc {
+  display: flex;
+  position: absolute;
+  width: 90%;
+  top: 63%;
+  left: 5%;
+  z-index: 5;
+  transition: 1.5s;
+}
+.peopleBigDesc {
+  position: absolute;
+  font-weight: 900 !important;
+  transform: translateX(-100%);
+  color: white;
+  top: 0;
+  z-index: 7;
+  transition: 1.5s;
+}
+
+.bigDescTextHead {
+  font-style: italic;
+  margin-bottom: 0;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.bigDescText1 {
+  font-size: 1.55rem !important;
+  margin-left: 5% !important;
+  margin-right: 5% !important;
+  margin-top: 4% !important;
+  z-index: 6;
+}
+
+.smallDescText {
+  font-size: 1.25rem !important;
+  font-weight: 600 !important;
+  color: white;
+}
+
+.peopleOuter {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  bottom: 30%;
+  left: -20%;
+  height: 20%;
+  width: 115%;
+  z-index: 6;
+  transition: 1.5s;
+}
+
+.pseudonym {
+  font-size: 3.5rem !important;
+  font-weight: 750 !important;
+  color: #ffffff;
+  text-transform: uppercase;
+    z-index: 5;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 15%;
+    bottom: -10%;
+    height: 3px;
+    background: #fa5eff;
+    z-index: 1;
+  }
+
+}
+
+.fullName {
+  color: #ffffff;
+  font-weight: 700 !important;
+  margin-top: -3% !important;
+  margin-left: 5% !important;
+
+}
+
+.age {
+  font-size: 2rem !important;
+  font-weight: 400 !important;
+  margin-top: -3% !important;
+  margin-left: 8% !important;
+  color: white;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 5%;
+    bottom: 10%;
+    left: 1%;
+    height: 7px;
+    background: #ffffff;
+    z-index: 1;
+    transition: opacity var(--card-transition-duration)
+    var(--card-transition-easing);
+    opacity: calc(1 - var(--opacity));
+  }
+}
+
+.text-stroke {
+  -webkit-text-stroke: 0.2px #000000;
+  text-shadow:
+          -1px -1px 0 #000,
+          1px -1px 0 #000,
+          -1px 1px 0 #000,
+          1px 1px 0 #000;
+
+}
+
+@media (max-width: 1930px)  {
+  .bigDescText1 {
+    font-size: 1.4rem !important;
+  }
+}
+
+@media (max-width: 1760px)  {
+  .bigDescText1 {
+    font-size: 1.3rem !important;
+  }
+}
+
+
+@media (max-width: 1580px)  {
+  .bigDescText1 {
+    font-size: 1.1rem !important;
+  }
+}
+
+
+@media (max-width: 700px)  {
+  .bigDescText1 {
+    font-size: 0.9rem !important;
+  }
+}
+
