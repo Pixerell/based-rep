@@ -1,0 +1,24 @@
+.lineChart {
+}
+
+.recharts-cartesian-grid {
+  transition: 1s !important;
+}
+
+.recharts-legend-item-text {
+  font-weight: 500 !important;
+  padding: 4px !important;
+  background-color: #343434 !important;
+  border-width: 1px 1px 2px 1px !important;
+  border-style: solid !important;
+  border-radius: 3px !important;
+  border-color: #080613 !important;
+  box-shadow: 1px 1px 0 rgba(149, 57, 222, 0.25) !important;
+  transition: 1s !important;
+}
+
+.specialYearLabel {
+  font-family: "Courier New", serif !important;
+  font-weight: 700 !important;
+  transition: 1s;
+}
