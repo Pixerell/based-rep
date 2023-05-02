@@ -40,12 +40,15 @@ const BasedTheme: ThemeOptions = createTheme
 const root: ReactDOM.Root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
+
 root.render(
   <React.StrictMode>
 	  <ThemeProvider theme={BasedTheme}>
 		  <App />
 	  </ThemeProvider>
   </React.StrictMode>
+
 );
 
 // If you want to start measuring performance in your app, pass a function

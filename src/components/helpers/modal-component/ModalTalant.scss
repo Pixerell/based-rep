@@ -1,0 +1,69 @@
+.css-10hotyr {
+  overflow: hidden;
+  color: white;
+  background-color: #330909 !important;
+  border: 6px solid #ff7676 !important;
+  border-radius: 1px;
+}
+
+.modalHead {
+  display: flex;
+  flex-direction: row;
+  z-index: 2;
+}
+
+.modalHeadText {
+  font-weight: 900 !important;
+  font-size: 2rem !important;
+  letter-spacing: 6px !important;
+  font-family: Roboto, serif !important;
+  z-index: 2;
+}
+
+.mainTextModal {
+  margin-left: 2% !important;
+  margin-top: 10px !important;
+  font-size: 1.2rem !important;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 45%;
+    top: 30%;
+    left: 10%;
+    height: 2px;
+    background: #ff5e9c;
+    z-index: 2;
+  }
+}
+
+.attentionIcon {
+  position: absolute;
+  height: 64px;
+  width: 64px;
+  align-items: center;
+  margin-top: 6%;
+  right: 12%;
+  transform: scale(1.8);
+  z-index: 2;
+}
+
+.BackgroundImage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  object-fit: cover;
+  opacity: 0.7;
+  filter: blur(30px);
+  transform: skewX(-30deg);
+  z-index: -1;
+}
+
+.closeBtn {
+  color: white !important;
+  margin-top: 20px !important;
+  font-size: 1rem !important;
+  font-weight: 700 !important;
+  z-index: 15;
+}
