@@ -11,7 +11,6 @@ export default function GameCard({card}:any): JSX.Element {
 
     return (
         <div id={card.id} className="gameCard" onClick={handleClick}>
-            <a className="downloadLink" href={card.torrentFile} download="a">
                 <Card elevation={3} className="gameCardClass">
                     <div className="gameCardBody">
                         <div className='gameContentWrapper'>
@@ -29,7 +28,6 @@ export default function GameCard({card}:any): JSX.Element {
                         </div>
                     </div>
                 </Card>
-            </a>
         </div>
 
     )
