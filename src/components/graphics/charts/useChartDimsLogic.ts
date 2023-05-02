@@ -1,6 +1,6 @@
 import {useLayoutEffect, useState } from "react";
 
-export default function useChartWidth(): { chartWidth: number; handleChartWidthChange: () => void; chartHeight: number; handleChartHeightChange: () => void } {
+export default function useChartDimensions(): { chartWidth: number; handleChartWidthChange: () => void; chartHeight: number; handleChartHeightChange: () => void } {
     const [chartWidth, setChartWidth] = useState(window.innerWidth * 0.88);
     const [chartHeight] = useState(500);
 
