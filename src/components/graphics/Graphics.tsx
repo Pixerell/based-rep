@@ -1,6 +1,7 @@
 import React from 'react';
 import AreaCoinChart from "./charts/areaChart";
 import LineChart from "./charts/lineChart";
+import MathChart from "./charts/mathChart";
 import './Graphics.scss';
 
 
@@ -27,6 +28,16 @@ export default function Graphics() : JSX.Element {
 				</h1>
 				<div className="lineWrapper">
 					<AreaCoinChart/>
+				</div>
+			</span>
+			<span className="lineSection mathC">
+				<h1 className={'chartHead'}> Свой Личный Матешный График
+					<div className={'chartInfo'}>
+					  	Построй свой график, введя формулу для Y в поле снизу.
+				  </div>
+				</h1>
+				<div className="lineWrapper">
+					<MathChart/>
 				</div>
 			</span>
 		</div>

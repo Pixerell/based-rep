@@ -9,7 +9,7 @@ import {
     AreaChart, CartesianGrid, Tooltip, XAxis, YAxis,
 } from "recharts";
 import "./areaChart.scss";
-import useChartWidth from "./useChartWidthLogic";
+import useChartDimensions from "./useChartDimsLogic";
 
 
 function generateDataArray(): any[] {
@@ -32,7 +32,8 @@ let data: any[] = generateDataArray();
 function AreaCoinChart(): JSX.Element {
 
 
-    const { chartHeight }: { chartHeight: number} = useChartWidth();
+    const { chartHeight }: { chartHeight: number} = useChartDimensions();
+    const { chartWidth }: { chartWidth: number} = useChartDimensions();
 
     const [initialPriceUsd, setInitialPriceUsd] = useState<number | null>(null);
     const [initialPriceRub, setInitialPriceRub] = useState<number | null>(null);
@@ -70,7 +71,7 @@ function AreaCoinChart(): JSX.Element {
 
     return (
             <div className="chart-container">
-                    <AreaChart width={window.innerWidth * 0.88} height={chartHeight}  data={data}>
+                    <AreaChart width={chartWidth} height={chartHeight}  data={data}>
                         <defs>
                             <linearGradient id="color" x1="0" y1="0" x2="0" y2="1">
                                 <stop offset="0" stopColor="#e880ff" stopOpacity={0.4}/>

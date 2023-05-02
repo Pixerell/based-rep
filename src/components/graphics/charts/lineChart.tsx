@@ -11,7 +11,7 @@ import {
 } from "recharts";
 import { ShoegazerData } from "../ShoegazerData";
 import "./lineChart.scss";
-import useChartWidth from "./useChartWidthLogic";
+import useChartDimensions from "./useChartDimsLogic";
 
 const specialMarkingColor: string = '#e880ff';
 
@@ -58,7 +58,7 @@ export default function DualAxisLineChart() : JSX.Element {
 
     const paragraphs: HTMLElement[] = Array.from(document.querySelectorAll('.fade-inP')) as HTMLElement[];
     const [showDetails, setShowDetails] = useState(false);
-    const { chartWidth, handleChartWidthChange }: { chartWidth: number; handleChartWidthChange: () => void } = useChartWidth();
+    const { chartWidth, handleChartWidthChange }: { chartWidth: number; handleChartWidthChange: () => void } = useChartDimensions();
 
     useEffect(() => {
         const paragraphs: HTMLElement[] = document.querySelectorAll('.fade-inP') as any as HTMLElement[];
