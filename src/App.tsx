@@ -11,7 +11,8 @@ import TalantPage from "./components/talant/TalantPage";
 export default function App(): JSX.Element {
 	return (
 		<div>
-			<div className={"noise"}/>
+			<div id="noise" className={"noise"}/>
+			<div id="portal"/>
 			<Router>
 				<Routes>
 					<Route path="/" element={<MainPage/>}/>
