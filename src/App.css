@@ -1,3 +1,8 @@
+html, body {
+    height: 100%;
+    background-color: #080613;
+}
+
 .AppBar {
     backface-visibility: hidden;
 }
@@ -8,12 +13,9 @@ a {
     color: #b55eff;
 }
 
-
 a:hover {
     color: white;
 }
-
-
 
 .noise::before {
     position: fixed;

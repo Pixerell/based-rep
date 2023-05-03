@@ -53,3 +53,33 @@
   rotate: 0deg !important;
   transition: 0.1s !important;
 }
+
+@media (max-width: 1130px) {
+  .butItem {
+    transform: scale(0.8);
+    margin: 0;
+  }
+  .butItemText {
+    font-size: 0.9rem !important;
+  }
+  .inputWrapper {
+    margin-right: 0;
+
+  }
+}
+
+@media (max-width: 840px) {
+  .butItem {
+    transform: scale(0.8);
+    margin-top: -20px;
+  }
+  .butItemText {
+    display: none;
+  }
+  .inputWrapper {
+    margin-left: 0;
+  }
+  .inputField {
+    scale: 0.8;
+  }
+}

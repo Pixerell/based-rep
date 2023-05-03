@@ -134,3 +134,67 @@
   rotate: 3deg;
   transition: 0.1s !important;
 }
+
+@media (max-width: 1255px) {
+  .shitcoin {
+    transform: scale(2);
+  }
+
+  .shitcoinLabel {
+    margin-bottom: 5%;
+    font-size: 1.9rem;
+  }
+  .priceText {
+    font-size: 1rem;
+  }
+
+  .priceIcon {
+    margin-top: 8%;
+    transform: scale(1.4);
+  }
+}
+
+@media (max-width: 930px) {
+  .shitcoin {
+    transform: scale(1.5);
+  }
+
+  .shitcoinLabel {
+    margin-bottom: -3%;
+    font-size: 1.2rem;
+  }
+  .priceText {
+    font-size: 1rem;
+  }
+
+  .priceIcon {
+    margin-top: 8%;
+    transform: scale(1.2);
+  }
+
+  .generateButton {
+    transform: scale(0.6);
+  }
+}
+
+@media (max-width: 610px) {
+  .shitcoin {
+    transform: scale(1.5);
+  }
+
+  .shitcoinLabel {
+    display: none;
+  }
+  .priceText {
+    font-size: 1rem;
+  }
+
+  .priceIcon {
+    margin-top: 8%;
+    transform: scale(1.2);
+  }
+
+  .generateButton {
+    transform: scale(0.6);
+  }
+}

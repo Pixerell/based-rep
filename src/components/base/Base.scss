@@ -48,6 +48,7 @@
 }
 
 .gameCard--focus {
+    cursor: pointer;
     filter: contrast(130%) !important;
     transform: scale(1.05) !important;
     transition: 1s !important;
