@@ -52,7 +52,6 @@
   transition: 1.5s;
 }
 
-
 .blackTint1 {
   position: absolute;
   top: 0;
@@ -150,7 +149,6 @@
     background: #fa5eff;
     z-index: 1;
   }
-
 }
 
 .fullName {
@@ -158,7 +156,6 @@
   font-weight: 700 !important;
   margin-top: -3% !important;
   margin-left: 5% !important;
-
 }
 
 .age {
@@ -205,17 +202,14 @@
   }
 }
 
-
 @media (max-width: 1580px)  {
   .bigDescText1 {
     font-size: 1.1rem !important;
   }
 }
 
-
 @media (max-width: 700px)  {
   .bigDescText1 {
     font-size: 0.9rem !important;
   }
 }
-

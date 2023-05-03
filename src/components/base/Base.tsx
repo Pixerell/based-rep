@@ -113,7 +113,6 @@ function Base(): JSX.Element {
 						</Box>
 				  </span>
 				</div>
-
 				) :
 					<Preloader />
 				})

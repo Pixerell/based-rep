@@ -103,7 +103,7 @@
 }
 
 .Finaltext {
-    border-right: 0.3em solid var(--tagtext-color); /* The typwriter cursor */
+    border-right: 0.3em solid var(--tagtext-color);
     border-radius: 1px;
     animation:
             blink-caret .75s step-end infinite;
@@ -112,8 +112,7 @@
 ul {
     margin: 0;
     padding: 0;
-    list-style: none; /* Remove default bullets */
-
+    list-style: none;
 }
 
 li {
@@ -227,9 +226,7 @@ ul li::before {
         font-size: calc(1vw + 1vh);
         word-wrap: break-word;
         overflow: hidden;
-
     }
-
 }
 
 @media (max-width: 200px) {
@@ -269,7 +266,7 @@ ul li::before {
 @keyframes typing {
     0% {
         width: 0;
-        border-right: 0.1em solid var(--tagtext-color); /* The typwriter cursor */
+        border-right: 0.1em solid var(--tagtext-color);
 
     }
     42% {
@@ -278,9 +275,7 @@ ul li::before {
     100% {
         width: 100%;
         border-color: transparent;
-
     }
-
 }
 
 @keyframes fadeIn {
@@ -290,7 +285,6 @@ ul li::before {
   100% {
     opacity: 1;
   }
-
 }
 
 @keyframes fadeInMove {

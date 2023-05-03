@@ -49,10 +49,9 @@ function MainContent(): JSX.Element {
 										<span className={'Tagtext'}>&lt;/skills&gt;</span>
 									</ul>
 								</span>
-
-										<span className={'Codetextblock1'}>
+								<span className={'Codetextblock1'}>
 									<p className={'TextParagraph'}>
-									<span className={'Tagtext'}>&lt;/body&gt;</span>
+										<span className={'Tagtext'}>&lt;/body&gt;</span>
 									</p>
 								</span>
 								<span className={'Codetextblock1'}>
@@ -75,8 +74,7 @@ function MainContent(): JSX.Element {
 					<div className={"cardWrapper"}>
 						<Box className={"boxCards"} padding={2} sx={{marginLeft: '16%', marginRight:'16%',}} >
 							<Grid container spacing={16} sx={{marginBottom: 0, width: 'auto', padding: 0}} >
-								{/* tslint:disable-next-line:typedef */}
-								{cardsN.map(cardN => (
+								{cardsN.map((cardN: any) => (
 									<Grid sx={{paddingTop: 0}} item key={cardN.id} xs={12} md={6} lg={6}  >
 										<ProjectCard card={cardN} />
 									</Grid>
@@ -99,8 +97,6 @@ function MainContent(): JSX.Element {
 						</div>
 					</div>
 				</div>
-
-
 				) :
 			<Preloader/>
 			})

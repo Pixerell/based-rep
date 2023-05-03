@@ -22,7 +22,7 @@ export default function PeopleCard({card}:any): JSX.Element {
         const cardCenterY: number = cardRect.top + cardRect.height / 2;
         const mouseX: number = event.clientX - cardCenterX;
         const mouseY: number = event.clientY - cardCenterY;
-        const maxRotation: number = 12; // adjust to change maximum rotation angle
+        const maxRotation: number = 12;
         const rotationX: number = (maxRotation * mouseY) / (cardRect.height / 2);
         const rotationY: number = (-maxRotation * mouseX) / (cardRect.width / 2);
         card.style.transform = `perspective(1000px) rotateX(${rotationX * -1}deg) rotateY(${rotationY *-1}deg)`;

@@ -3,9 +3,9 @@
   background-size: cover;
   min-width:100% !important;
   min-height:100% !important;
-  transition: transform 60s; /* Animation */
+  transition: transform 60s;
 }
 
 .Talant:hover {
-  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.5);
 }

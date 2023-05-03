@@ -16,11 +16,9 @@ function Footer(): JSX.Element {
     const [showCount, setShowCount] = useState(false);
 
 
-    // tslint:disable-next-line:typedef
-    const incrementCount = (): void => {
+    const incrementCount: () => void = (): void => {
         setCount(count + 1);
-        // tslint:disable-next-line:typedef
-        setShowCount(showCount => !showCount);
+        setShowCount((showCount: boolean) => !showCount);
     };
 
     return (
@@ -60,10 +58,7 @@ function Footer(): JSX.Element {
                     <a className="scLink" rel={'noreferrer'} target={'_blank'} href={'https://soundcloud.com/user-389858854'}>Pixerell</a>
                 </div>
             </div>
-
-
         </div>
-
     )
 }
 

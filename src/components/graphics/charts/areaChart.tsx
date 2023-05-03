@@ -26,7 +26,6 @@ function generateDataArray(): any[] {
     return data;
 }
 
-
 let data: any[] = generateDataArray();
 
 function AreaCoinChart(): JSX.Element {
@@ -180,10 +179,8 @@ function CustomTooltip({ active, payload, label, initialPriceUsd, initialPriceRu
                     )}
                 </span>
             </div>
-
         );
     }
-
     return null;
 }
 

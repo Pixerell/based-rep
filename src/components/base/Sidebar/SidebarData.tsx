@@ -3,8 +3,7 @@ import VideogameAssetIcon from '@mui/icons-material/VideogameAsset';
 import {Icon} from "@mui/material";
 import React from "react";
 
-// tslint:disable-next-line:typedef
-export const SidebarData  = [
+export const SidebarData: ({ path: string; nav: number; cName: string; icon: JSX.Element; title: string })[] = [
     {
         title: 'Games',
         path: '/base',
@@ -18,8 +17,8 @@ export const SidebarData  = [
         title: 'People',
         path: '/base',
         icon:   <Icon>
-            <PsychologyAlt/>
-        </Icon>,
+                    <PsychologyAlt/>
+                </Icon>,
         cName: 'nav-text',
         nav: 700
 
@@ -28,11 +27,9 @@ export const SidebarData  = [
         title: 'Moosic',
         path: '/base',
         icon:   <Icon>
-            <Headphones/>
-        </Icon>,
+                    <Headphones/>
+                </Icon>,
         cName: 'nav-text',
         nav: 2000
     },
-
-
 ]

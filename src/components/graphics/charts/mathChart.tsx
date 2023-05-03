@@ -219,7 +219,6 @@ function MathChart(): JSX.Element {
                 </div>
             </div>
         </div>
-
     );
 }
 

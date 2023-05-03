@@ -1,6 +1,7 @@
 import React from "react";
 import Footer from "../footer-component/Footer";
 import {AudioPlayer, setupAudio} from "../helpers/audioPlayer";
+import ButtonBack from "../helpers/button-component/buttonBack";
 import './About.scss';
 
 export default function About(): JSX.Element {
@@ -9,9 +10,9 @@ export default function About(): JSX.Element {
 
     return (
         <div className={"Bod"}>
+            <ButtonBack urlNav="/"/>
             <div className={"Wrapper"}>
                 <div className={"Heading"}>
-
                 <img className={"Background"} src={"bg.jpg"} onLoad={startAudio} alt="background chillwave about image"/>
                 <img className={"Foreground"} src={"fgf.png"} alt="foreground clouds about image"/>
                 <h1 className={"Title"}>RASSLABUXA</h1>

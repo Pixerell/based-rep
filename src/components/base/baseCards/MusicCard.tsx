@@ -34,7 +34,6 @@ const ExpandMore = styled((props: IExpandMoreProps) => {
 }));
 
 
-// @ts-ignore
 // tslint:disable-next-line:typedef
 export default function MusicCard({card}): JSX.Element {
 

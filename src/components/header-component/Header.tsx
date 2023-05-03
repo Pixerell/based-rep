@@ -27,28 +27,25 @@ export default function Header(): JSX.Element {
 				setTimeout(() => {
 					const randomUrl:string = generateRandomUrl();
 					window.open(randomUrl, '_blank');
-				}, i * 100); // Delay each redirect by 1 second
+				}, i * 100);
 			}
 
 			setTimeout(() => {
 				navigate('/talant')
 				setIsOpen(false)
-			}, 1000); // Delay the navigation by 5 seconds (adjust as needed)
+			}, 1000);
 		}
 
 		else {
 			setIsOpen(true)
 		}
-
 	}
-
 
 	const generateRandomUrl: () => string = () => {
 		const urls: string[] = ['https://KILLYOURSELF.com', 'https://EVIL.org', 'https://THEENDISNIGH.net'];
 		const randomIndex: number = Math.floor(Math.random() * urls.length);
 		return urls[randomIndex];
 	};
-
 
 	useLayoutEffect(() => {
 		const isAnimationPlayed: boolean = localStorage.getItem('animationPlayed') === 'true';
@@ -65,7 +62,6 @@ export default function Header(): JSX.Element {
 			setAnimationPlayed(false);
 		});
 	}, []);
-
 
 	return (
 		<Box sx={{ flexGrow: 1 }} className={'Header'}>

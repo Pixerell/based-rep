@@ -18,8 +18,6 @@ const useCardsFetcher: (url: string) => { data: boolean; cardsN: any[] } = (url:
     } catch (error) {
         throw new Error('Failed to fetch card data for - ' + url)
     }
-
-
 };
 
 export default useCardsFetcher as (url:string) => { cardsN: any[], data: boolean };

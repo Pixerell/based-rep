@@ -50,14 +50,12 @@ export default function ProjectCard({card}:any): JSX.Element {
                                     {card.language}
                                 </Typography>
                             </div>
-
                         </div>
                         <span className={`cardMedia cardMediaOverlay blackTint ${isHovering ? "animate1" : ""}`} />
                         <img alt="cover image card" className={`cardMedia cardMediaOverlay img ${isHovering ? "animate1" : ""}`} src={card.projectImg1 !== null ? card.projectImg1 : albumDefaultPhoto}/>
                         <CardMedia className='cardMedia'
                                    image={card.projectImg !== null ? card.projectImg : albumDefaultPhoto}
-                                   title={card.projectName}
-                        />
+                                   title={card.projectName}/>
                     </div>
                 </div>
             </Card>

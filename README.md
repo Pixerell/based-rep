@@ -8,7 +8,7 @@ https://github.com/Pixerell/based-rep
 
 # Макетик проекта 
 
-https://www.figma.com/file/94UF6xnp2ndqwDcVyskNnF/Untitled?node-id=6%3A77
+https://www.fiAgma.com/file/94UF6xnp2ndqwDcVyskNnF/Untitled?node-id=6%3A77
 
 # UI KIT
 

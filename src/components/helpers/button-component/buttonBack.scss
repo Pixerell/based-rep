@@ -1,0 +1,53 @@
+.backButtonWrap {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: #9a9a9a solid 3px;
+  border-radius: 900px;
+  height: 64px;
+  width: 64px;
+  top: 5%;
+  left: 2%;
+  z-index: 5000;
+  transition: 0.5s ease;
+}
+
+.backButtonWrap:hover {
+  border-color: #ffffff;
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: 0.3s ease;
+}
+
+.backIcon {
+  color: #c0c0c0;
+  margin: 0 2px 2px 0;
+  transform: scale(1.4);
+  transition: 0.5s ease;
+}
+
+.backButtonWrap:hover .backIcon {
+  color: #ffffff;
+  margin-left: 8px;
+  transform: scale(1.6) rotate(90deg);
+  transition: 0.3s ease;
+}
+
+.backButtonWrap:active {
+  border-color: #f7c0ff;
+  cursor: pointer;
+  rotate: 60deg;
+  top: 4%;
+  transform: scale(1.6);
+  transition: .1s;
+
+  .backIcon {
+    margin-left: 0;
+    margin-bottom: 8px;
+    color: #ff8dfb;
+    transform: scale(1.8);
+    transition: .1s;
+  }
+}
