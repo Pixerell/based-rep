@@ -1,0 +1,143 @@
+export const baseData = {
+
+    musicCards : [
+        {
+            "album" : "OK Computer",
+            "artist" : "Radiohead",
+            "smallDesc" : "Битлз нашего времени",
+            "details" : "16 июня 1997 года состоялся релиз OK Computer. Альбом представлял собой мелодичный рок с элементами электронной музыки, дополненный ярким эмоциональным вокалом Йорка. OK Computer считается классикой рок-музыки 90-х и входит в списки «Лучших альбомов» по различным версиям. На 40-й церемонии вручения премий Грэмми OK Computer был признан лучшим альбомом в жанре альтернативной музыки, а также был одним из претендентов на премию в номинации «Альбом года». Песни «Paranoid Android», «Karma Police» и «No Surprises» были изданы как синглы.",
+            "genre" : "Alt Rock",
+            "date" : "1997",
+            "link" : "https://open.spotify.com/album/6dVIqQ8qmQ5GBnJ9shOYGE?si=v5ExHgtUQc64xPOxTdppRA",
+            "avatar" : "musicFiles/okcomputer.jpg",
+            "artist_avatar" : "musicFiles/radioheadAvatar.jpg",
+            "id" : 1
+        },
+
+        {
+            "album" : "Geodaddi",
+            "artist" : "Boards Of Canada",
+            "smallDesc" : "Внимание! Никогда не засыпайте под этот альбом.",
+            "details" : "Geogaddi возвращает слушателя к простым, детским мелодичным и гармоничным структурам, которых было довольно много в предыдущем альбоме Music Has the Right to Children. Однако в этом альбоме обыгрываются мотивы, которые некоторые считают достаточно тёмными, хотя для других, они выглядят невинными. Например, некоторые поклонники группы считают, что в названиях композиций скрыт различный мистический подтекст: упоминания рогатых божеств («You Could Feel the Sky»), культа секты Ветвь Давидова («1969»), пускание записи в обратном направлении («A Is to B as B Is to C») и гипнотизма («The Devil Is in the Details»). Конечно, всё это лишь индивидуальные толкования, не подтверждённые самыми музыкантами и открытые для догадок. Хотя музыка сохранила фирменное звучание и мелодии Boards of Canada, альбом может показаться некоторым тревожащим и параноидальным. Тем не менее, альбом считается классикой жанра. ",
+            "genre" : "IDM",
+            "date" : "2002",
+            "link" : "https://open.spotify.com/album/7Lou3RDk6NswmbzBMhro24?si=HbqKM2nPTsyuXd1_q1LfeA",
+            "avatar" : "musicFiles/geogaddi.jpg",
+            "artist_avatar" : "musicFiles/bocAvatar.jpg",
+            "id" : 2
+        },
+
+        {
+            "album" : "98.12.28 (live)",
+            "artist" : "Fishmans",
+            "smallDesc" : "Пик музыки...",
+            "details" : "Третий и последний концертный альбом японской дрим поп группы Fishmans. В нем задокументировано последнее живое выступление группы с фронтменом Синдзи Сато. Шоу было записано и снято на Akasaka Blitz 28 декабря 1998 гола. Фишманы исполнили множество своих самых любимых песен и синглов, в том числе «Hikōki», «Ikareta Baby», «Night Cruising», «Melody», «Walking in the Rhythm» и «Yurameki in the Air». В финале они сыграли расширенную адаптацию всего своего шестого студийного альбома Long Season, которая объективно является лучшей песней в мире. Концерт отразил стилистическое развитие группы от музыки, находящейся под сильным влиянием регги и даба, к поп-музыке мечты и неопсиходелии в конце их карьеры. ",
+            "genre" : "Dream Pop",
+            "date" : "1999",
+            "link" : "https://open.spotify.com/album/5K4YFkTizFoMOyN5Khfp7G?si=X0EG9ymhTc-spmS0X_QZrQ",
+            "avatar" : "musicFiles/fishmans.jpg",
+            "artist_avatar" : "musicFiles/fishmansAvatar.jpg",
+            "id" : 3
+        },
+
+        {
+            "album" : "Loveless",
+            "artist" : "My Bloody Valentine",
+            "smallDesc" : "Утопать в бесконечных слоях атмосферного шума.",
+            "details" : "Dторой студийный альбом ирландской рок-группы My Bloody Valentine, выпущенный в 1991 году на лейбле Creation Records. Согласно слухам, запись пластинки обошлась лейблу в 250 тысяч фунтов стерлингов, что поставило его на грань банкротства. Хотя Loveless не добился коммерческого успеха, он был хорошо принят критиками. Альбом считается эталоном жанра шугейзинг, он оказал большое влияние на альтернативную музыкальную сцену, став образцом и источником вдохновения для многих исполнителей. По мнению ряда критиков, Loveless — один из лучших альбомов 1990-х. ",
+            "genre" : "Shoegaze",
+            "date" : "1991",
+            "link" : "https://open.spotify.com/album/3GH4IiI6jQAIvnHVdb5FB6?si=DpRJeBeDR--IPk8c2FegPQ",
+            "avatar" : "musicFiles/mbv.jpg",
+            "artist_avatar" : "musicFiles/mbvAvatar.jpeg",
+            "id" : 4
+        },
+    ],
+
+    gameCards: [
+        {
+            gameTitle: "Celeste",
+            genre: "Platformer",
+            smallDesc: "Sometimes you need to challenge yourself",
+            image: "gameFiles/celesteImg.png",
+            torrentFile: "gameFiles/Celeste [L] [RUS + ENG + 7] (2019) (1.4.0.0) [EGS-Rip] [rutracker-6087855].torrent",
+            id: 1
+        },
+        {
+            gameTitle: "Dwarf Fortress",
+            genre: "Colony Sim",
+            smallDesc: "But don't challenge yourself THAT much",
+            image: "gameFiles/dfImg.jpg",
+            torrentFile: "gameFiles/Dwarf Fortress Slaves to Armok God of Blood Chapter II Dwarf Fortress [P] [ENG] (2022) (50.07) [Portable] [rutracker-6319699].torrent",
+            id: 2
+        },
+        {
+            gameTitle: "Hyper Light Drifter",
+            genre: "Isometric Action",
+            smallDesc: "A story without words",
+            image: "gameFiles/hldImg.png",
+            torrentFile: "gameFiles/Hyper Light Drifter [L] [RUS + ENG + 5] (2016) (7212017 hotfix) [GOG] [rutracker-6260865].torrent",
+            id: 3
+        },
+        {
+            gameTitle: "Hollow Knight",
+            genre: "Metroidvania",
+            smallDesc: "No cost too great..",
+            image: "gameFiles/hkImg.png",
+            torrentFile: "gameFiles/Hollow Knight [L] [RUS + ENG + 8] (2017) (1.5.78.11833 + 2 DLC) [GOG] [rutracker-5382613].torrent",
+            id: 4
+        }
+    ],
+    peopleCards: [
+        {
+            pseudonym: "Gosling",
+            fullName: "Ryan Thomas Gosling",
+            age: 42,
+            smallDesc: "Актёр, с одним и тем же родным лицом в каждом фильме",
+            bigDesc: "Райан проживает в Москве, в районе Люблино со своей кошкой Бабиджоном. Он основатель музыкальной группы `Сладкие Язычки`, где выступает как вокалист разной степени говённости. У Раяна Гослинга часто спрашивали, кто является его вдохновением, на что он всегда отвечал - Алексей Ушаков из 8-го Б.",
+            image: "profileFiles/ryan.jpg",
+            image2: "profileFiles/ryanS.jpg",
+            id: 1
+        },
+        {
+            "pseudonym": "Pudge",
+            "fullName": "Пудж, Буча, Жиробас, Владимир Павлов, Чин-чоп и другие",
+            "age": "?",
+            "smallDesc": "Здравствуйте, вы позвонили в магазин `Влюблённый кролик`",
+            "bigDesc": "На полях аэрации марьинского района, близь Капотненского МНПЗ, как раз и родился Бамбуча. Паранджа никогда не брезговал поживиться на вкусных мальчиков подмосковья, из-за чего получил репутацию самого злостного нарушителя ПДД в нижнем Полижайске. Остерегайтесь его хука с эффектом преломления.",
+            "image": "profileFiles/pudge.jpg",
+            "image2": "profileFiles/pudgeS.jpg",
+            "id": 2
+        },
+        {
+            "pseudonym": "Ecco2k",
+            "fullName": "Zak Arogundade Gaterud",
+            "age": 28,
+            "smallDesc": "Музыкант, предприниматель, владелец секс-подземелья",
+            "bigDesc": "Ecco2k — самый сексуальный житель Швеции (воображаемая страна), где своей чистой аурой дрейнера построил гигансткое секс-подземелье, в котором участники надевают поводки его бренда Gloss. Выпустив песню Peroxide (at the bus stop, sucking cocks), сумел превратить всё население страны в фембоев",
+            "image": "profileFiles/ecco.jpg",
+            "image2": "profileFiles/eccoS.png",
+            "id": 3
+        },
+        {
+            "pseudonym": "Snake",
+            "fullName": "Змей Солидный",
+            "age": "42",
+            "smallDesc": "I'm trying to sneak around. But I'm dummy thicc, and the clap of my asscheeks keeps alerting the guards!",
+            "bigDesc": "Боевой охранник будки `Пятёрочка`. В свободное от опиздюливания вражин время подрабатывает на бирже Binance.com, где успешно теряет весь бюджет США. Снейк болеет острым диссоциативным расстройством личности, из-за чего иногда сомневается в существовании женского пола.",
+            "image": "profileFiles/mgs2.jpg",
+            "image2": "profileFiles/mgs3S.jpg",
+            "id": 4
+        },
+        {
+            "pseudonym": "Стражник",
+            "fullName": "Неизвестно",
+            "age": "?",
+            "smallDesc": "Мой кузен борется с драконами, а мне что досталось? Караульная служба",
+            "bigDesc": "Непризнанный герой Российской Федерации. Безликий стражник Вайтрана проводит своё свободное время на имиджборде 2ch.hk, где постит мемы про украинцев и гойду. Обладает телепатическими способностями (предсказывает отсутствие у тебя сладкого рулета), профессиональной тренировкой и невероятной удачей.",
+            "image": "profileFiles/guard.jpg",
+            "image2": "profileFiles/guardS.jpg",
+            "id": 5
+        }
+    ]
+}

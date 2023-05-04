@@ -3,18 +3,32 @@ import React, {useEffect, useState} from "react";
 import {GAME_CARDS_URL, MUSIC_CARDS_URL, PEOPLE_CARDS_URL} from "../../apiUrls";
 import Preloader from "../helpers/preloader-component/Preloader";
 import useCardsFetcher from "../helpers/useCardsFetcher";
+import useFallbackData from "../helpers/useFallbackDataChecker";
 import './Base.scss';
 import GameCard from "./baseCards/GameCard";
 import MusicCard from "./baseCards/MusicCard";
 import PeopleCard from "./baseCards/PeopleCard";
+import {baseData} from "./fallbackBaseData";
 import Sidebar from "./Sidebar/Sidebar";
+
 
 function Base(): JSX.Element {
 
-	const {cardsN: musicCardsN, data : musicData} = useCardsFetcher(MUSIC_CARDS_URL)
-	const {cardsN: gameCardsN, data: gameData} = useCardsFetcher(GAME_CARDS_URL)
-	const {cardsN: peopleCardsN, data: peopleData} = useCardsFetcher(PEOPLE_CARDS_URL)
+	let {cardsN: musicCardsN, data : musicData} = useCardsFetcher(MUSIC_CARDS_URL)
+	let {cardsN: gameCardsN, data: gameData} = useCardsFetcher(GAME_CARDS_URL)
+	let {cardsN: peopleCardsN} = useCardsFetcher(PEOPLE_CARDS_URL)
 	const [showCards, setShowCards] = useState(false);
+
+	const fallbackData: boolean = useFallbackData(musicData);
+
+	if (fallbackData) {
+		musicCardsN = baseData.musicCards;
+		gameCardsN = baseData.gameCards;
+		peopleCardsN = baseData.peopleCards;
+		musicData = true;
+		gameData = true;
+		console.log("JSON Server is not up, using fallback based page data.")
+	}
 
 	useEffect(() => {
 		const timer: NodeJS.Timeout = setTimeout(() => {

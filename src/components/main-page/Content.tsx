@@ -4,13 +4,21 @@ import {PROJECT_CARDS_URL} from "../../apiUrls";
 import imageOfMe from "../../workingImages/me.png"
 import Preloader from "../helpers/preloader-component/Preloader";
 import useCardsFetcher from "../helpers/useCardsFetcher";
+import useFallbackData from "../helpers/useFallbackDataChecker";
 import './Content.scss';
+import {projectCards} from "./fallbackContentData";
 import ProjectCard from "./projectCard/ProjectCard";
-
 
 function MainContent(): JSX.Element {
 
-	const {cardsN, data} = useCardsFetcher(PROJECT_CARDS_URL);
+	let {cardsN, data} = useCardsFetcher(PROJECT_CARDS_URL);
+	const fallbackData: boolean = useFallbackData(data);
+
+	if (fallbackData) {
+		cardsN = projectCards;
+		data = true;
+		console.log("JSON Server is not up, using fallback main page data.")
+	}
 
 	return (
 		<div className={'bg'}>
