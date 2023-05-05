@@ -1,30 +1,24 @@
-# Примерная цветовая палитра проекта
+# PIXERELL
 
-https://coolors.co/100c3a-180c38-200c36-240c35-280c34-2c0c33-3f2246-503657-604866-6e5974
+* Сайт-аля-портфолио величайшего !
+* В разработке сайта использовались языки Javascript/Typescript + HTML/SCSS 
+* А также библиотеки/утилиты Recharts, Mathjs, html2canvas, concurrently, JSON-Server, gh-pages и MUI-Kit
+* Ссылка на сайт - https://pixerell.github.io/based-rep/ ! 
 
-# Репозиторий проекта
+# Как этот шедевр должен выглядеть:
 
-https://github.com/Pixerell/based-rep
+![image](https://user-images.githubusercontent.com/90747184/236396320-cc614170-92f5-4a93-a5c8-fbf510b2e971.png)
 
-# Макетик проекта 
+![image](https://user-images.githubusercontent.com/90747184/236396731-f238dfd2-86f9-4396-927d-5f2b1960ea08.png)
 
-https://www.fiAgma.com/file/94UF6xnp2ndqwDcVyskNnF/Untitled?node-id=6%3A77
+![image](https://user-images.githubusercontent.com/90747184/236396818-3220c02c-73ea-4b0c-8a1f-da881bc8fe23.png)
 
-# UI KIT
+![image](https://user-images.githubusercontent.com/90747184/236397665-b43699dd-aa0b-4772-b420-68a42d5f8ac9.png)
 
-https://mui.com/material-ui/getting-started/overview/
-
-# Задачки
-
-https://based-project.atlassian.net/jira/your-work
-
-# FAQ(U)
-
-* Если ты пользуешься Visual Studio Code, ТО ТЫ [REDACTED]
-* ~~Пушь в девелоп без уведомления~~ Девелоп теперь вкусно замержен ;)
-* Комиты желательно полезные годные православные
 
 # КОМАНДЫ
+
+* npm build для билда. npm predeploy и npm deploy для высадки на gh-pages
 
 * Для использования json данных нужно ввести команду:
   - npm install -g json-server
